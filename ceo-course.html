@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CEO과정 | 데일카네기 경기1지역 최고경영자과정</title>
+<meta name="description" content="데일카네기 경기1지역 CEO과정(DCC) — 수원·시흥·고양·화성오산·의정부양주포천·파주 2026 하반기 최고경영자과정 커리큘럼과 개강일정. 상담문의 010-5551-6230">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --cream-2:#efe8d8; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .section{padding:96px 0;}
+  .section-title{font-size:clamp(28px,4vw,42px); margin-bottom:16px;}
+  .section-sub{color:var(--gray); font-size:16px; line-height:1.7; max-width:640px;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo{display:flex; flex-direction:column; line-height:1.1; color:#fff;}
+  .logo .l1{font-family:var(--serif); font-weight:800; font-size:19px;}
+  .logo .l2{font-size:10px; letter-spacing:.22em; color:var(--gray-light); margin-top:3px;}
+  nav.menu{display:flex; align-items:center; gap:34px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover{opacity:1; color:var(--red);}
+  nav.menu a.current{opacity:1; color:var(--red); border-bottom:2px solid var(--red); padding-bottom:6px;}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 70px;}
+  .page-hero .eyebrow{color:var(--red);}
+  .page-hero .eyebrow::before{background:var(--red);}
+  .page-hero h1{font-size:clamp(32px,5vw,52px); color:#fff; max-width:700px;}
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .ceo-section{background:var(--white);}
+  .ceo-top{display:grid; grid-template-columns:1.1fr .9fr; gap:64px; align-items:start;}
+  .curri-list{margin-top:36px; display:flex; flex-direction:column;}
+  .curri-item{display:flex; gap:20px; padding:18px 0; border-bottom:1px solid var(--line);}
+  .curri-item .wk{font-family:var(--serif); font-weight:800; color:var(--red); font-size:14px; flex:0 0 84px;}
+  .curri-item .tx h4{font-size:15.5px; font-weight:700; margin-bottom:4px;}
+  .curri-item .tx p{font-size:13.5px; color:var(--gray);}
+  .ceo-card{background:var(--black); color:#fff; padding:44px 36px; position:relative;}
+  .ceo-card::before{content:''; position:absolute; top:0; left:0; right:0; height:5px; background:var(--red);}
+  .ceo-card h3{font-size:24px; color:#fff; margin-bottom:10px;}
+  .ceo-card p{color:var(--gray-light); font-size:14.5px; line-height:1.8; margin-bottom:26px;}
+  .ceo-card ul{list-style:none; margin-bottom:30px;}
+  .ceo-card li{font-size:14px; padding:9px 0; border-top:1px solid rgba(255,255,255,.1); display:flex; gap:10px;}
+  .ceo-card li::before{content:'—'; color:var(--red);}
+
+  .table-scroll{overflow-x:auto; margin-top:44px; border:1px solid var(--line);}
+  table.sched-table{width:100%; border-collapse:collapse; min-width:760px; background:var(--white);}
+  table.sched-table th, table.sched-table td{padding:14px 18px; text-align:left; font-size:14px; border-bottom:1px solid var(--line); white-space:nowrap;}
+  table.sched-table thead th{background:var(--black); color:#fff; font-weight:700; font-size:12.5px; letter-spacing:.05em;}
+  table.sched-table tbody tr:hover{background:var(--cream-2);}
+  table.sched-table td.course{font-weight:700;}
+  table.sched-table td.gisu{color:var(--red); font-weight:700;}
+  table.sched-table td.apply-cell a{color:var(--red); font-weight:700; border-bottom:1px solid var(--red);}
+  .note-box{margin-top:28px; padding:16px 20px; border:1px dashed var(--gray-light); font-size:13px; color:var(--gray); background:var(--cream-2);}
+
+  .cta-strip{background:var(--red); color:#fff; padding:56px 0; text-align:center;}
+  .cta-strip h2{color:#fff; font-size:clamp(22px,3vw,32px); margin-bottom:20px;}
+  .cta-strip .btn{background:#fff; color:var(--red); font-weight:800;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+
+  @media (max-width:920px){
+    nav.menu{display:none;}
+    .nav-tel{display:none;}
+    .ceo-top{grid-template-columns:1fr;}
+    .section{padding:64px 0;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <span class="l1">DALE CARNEGIE</span>
+      <span class="l2">경기1지역 · 카네기인재개발원</span>
+    </div>
+    <nav class="menu">
+      <a href="index.html#about">소개</a>
+      <a href="ceo-course.html" class="current">CEO과정</a>
+      <a href="index.html#programs">프로그램</a>
+      <a href="index.html#schedule">개강일정</a>
+      <a href="index.html#network">동문네트워크</a>
+      <a href="index.html#voice">후기</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="#contact" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">홈</a> / CEO과정</div>
+    <div class="eyebrow">DALE CARNEGIE FOR CEO</div>
+    <h1>최고경영자(CEO) 리더십 과정</h1>
+  </div>
+</section>
+
+<section class="section ceo-section" id="ceo">
+  <div class="wrap">
+    <div class="ceo-top">
+      <div>
+        <p class="section-sub">경영자로서 마주하는 가장 어려운 문제 — 사람과 조직 — 을 정면으로 다루는 데일카네기의 대표 프로그램입니다. 매주 정해진 세션을 통해 자기 확신부터 조직 실행력까지 단계적으로 성장합니다.</p>
+
+        <div class="curri-list">
+          <div class="curri-item"><div class="wk">Module 1</div><div class="tx"><h4>성공적 리더십의 기초</h4><p>리더와 관리자의 차이를 이해하고 변화의 출발점을 세웁니다.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 2</div><div class="tx"><h4>자신감 향상</h4><p>발표와 실습을 통해 흔들리지 않는 자기 확신을 훈련합니다.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 3</div><div class="tx"><h4>인간관계 증진</h4><p>비난하지 않고 설득하는 법, 신뢰를 만드는 대화의 원칙.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 4</div><div class="tx"><h4>설득력 있는 커뮤니케이션</h4><p>경청, 질문법, 피드백 전달까지 아우르는 실전 화법.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 5</div><div class="tx"><h4>스트레스와 걱정 관리</h4><p>경영자로서 압박 속에서도 흔들리지 않는 마음의 근력을 기릅니다.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 6</div><div class="tx"><h4>동기부여와 갈등관리</h4><p>구성원의 마음을 움직이고 갈등을 건설적으로 풀어냅니다.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 7</div><div class="tx"><h4>협력 이끌기</h4><p>조직 안팎에서 협력을 이끌어내는 관계의 기술.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 8</div><div class="tx"><h4>리더십 실습과 영향력 확대</h4><p>롤플레잉과 현업 적용 사례로 리더십을 체화합니다.</p></div></div>
+          <div class="curri-item"><div class="wk">Module 9</div><div class="tx"><h4>팀 운영과 비전 실천</h4><p>비전을 제시하고 실행 계획으로 옮기는 마지막 단계입니다.</p></div></div>
+        </div>
+        <p style="margin-top:18px; font-size:13px; color:var(--gray);">※ 강의가 아닌 발표·롤플레잉·피드백·토론 중심의 참여형 실습으로 12주간 진행됩니다.</p>
+      </div>
+
+      <div class="ceo-card">
+        <span class="eyebrow" style="color:var(--red);">경기1지역 모집 안내</span>
+        <h3>2026 하반기<br>CEO과정 모집</h3>
+        <p>수원·시흥·고양·화성오산·의정부양주포천·파주 6개 권역에서 동시 모집합니다. 지역별 정원이 있어 조기 마감될 수 있습니다.</p>
+        <ul>
+          <li>대상 : 기업 대표 · 임원 · 경영자</li>
+          <li>구성 : 주 1회 세션, 총 12주 과정</li>
+          <li>정원 : 지역별 소수 정예</li>
+        </ul>
+        <a href="#contact" class="btn btn-red" style="width:100%;">지금 상담 신청하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cream-2); padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow">경기1지역 모집 권역</div>
+    <h2 class="section-title">2026 하반기 개강 일정</h2>
+    <div class="table-scroll">
+      <table class="sched-table">
+        <thead><tr><th>과정</th><th>지역</th><th>기수</th><th>개강</th><th>종강</th><th>요일</th><th>기간</th><th>수강료</th><th></th></tr></thead>
+        <tbody>
+          <tr><td class="course">CEO과정</td><td>파주</td><td class="gisu">27기</td><td>09.02</td><td>11.18</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td>화성·오산</td><td class="gisu">42기</td><td>09.07</td><td>11.30</td><td>월</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td>고양</td><td class="gisu">55기</td><td>09.14</td><td>12.07</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td>의정부·양주·포천</td><td class="gisu">28기</td><td>09.15</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td>수원</td><td class="gisu">67기</td><td>09.17</td><td>12.10</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td>시흥</td><td class="gisu">65기</td><td>09.17</td><td>12.10</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box">※ 정확한 잔여 좌석은 전화(010-5551-6230) 또는 상담 신청으로 확인해 주세요.</div>
+  </div>
+</section>
+
+<section class="cta-strip" id="contact">
+  <div class="wrap">
+    <h2>지금 바로 CEO과정 상담을 신청하세요</h2>
+    <a href="tel:010-5551-6230" class="btn">010-5551-6230 전화 상담</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">이 페이지는 "별도 페이지 구조" 예시입니다 — 실제로는 index.html의 #ceo 섹션과 내용이 같습니다. © 2026 카네기인재개발원 경기1지역</div>
+</footer>
+
+</body>
+</html>

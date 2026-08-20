@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="pageTitle">프로그램 소개 | 데일카네기</title>
+<meta id="pageDesc" name="description" content="데일카네기 프로그램 소개">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --cream-2:#efe8d8; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .section{padding:80px 0;}
+  .section-sub{color:var(--gray); font-size:16px; line-height:1.7; max-width:640px;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo-img{height:44px; width:auto; filter:invert(1); mix-blend-mode:screen; display:block;}
+  nav.menu{display:flex; align-items:center; gap:34px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover{opacity:1; color:var(--red);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 70px;}
+  .page-hero .eyebrow{color:var(--red);}
+  .page-hero .eyebrow::before{background:var(--red);}
+  .page-hero h1{font-size:clamp(30px,5vw,48px); color:#fff; max-width:760px;}
+  .page-hero p{color:var(--gray-light); font-size:17px; margin-top:16px; max-width:640px; line-height:1.7;}
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .detail-section{background:var(--white);}
+  .detail-top{display:grid; grid-template-columns:1.1fr .9fr; gap:64px; align-items:start;}
+  .curri-list{margin-top:16px; display:flex; flex-direction:column;}
+  .curri-item{display:flex; gap:20px; padding:16px 0; border-bottom:1px solid var(--line);}
+  .curri-item .wk{font-family:var(--serif); font-weight:800; color:var(--red); font-size:14px; flex:0 0 84px;}
+  .curri-item p{font-size:14px; color:var(--gray); line-height:1.7;}
+  .info-card{background:var(--black); color:#fff; padding:40px 34px; position:relative;}
+  .info-card::before{content:''; position:absolute; top:0; left:0; right:0; height:5px; background:var(--red);}
+  .info-card h3{font-size:20px; color:#fff; margin-bottom:18px;}
+  .info-card ul{list-style:none; margin-bottom:26px;}
+  .info-card li{font-size:14px; padding:9px 0; border-top:1px solid rgba(255,255,255,.1); display:flex; gap:10px; color:var(--gray-light);}
+  .info-card li::before{content:'—'; color:var(--red);}
+  .info-card li b{color:#fff; font-weight:600;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+
+  @media (max-width:920px){
+    nav.menu{display:none;} .nav-tel{display:none;}
+    .detail-top{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
+    <nav class="menu">
+      <a href="index.html#about">소개</a>
+      <a href="index.html#programs">프로그램</a>
+      <a href="index.html#schedule">개강일정</a>
+      <a href="index.html#contact">상담신청</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="index.html#contact" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">홈</a> / <a href="index.html#programs">프로그램</a> / <span id="crumbName">프로그램</span></div>
+    <div class="eyebrow" id="pTag">DALE CARNEGIE</div>
+    <h1 id="pTitle">프로그램 소개</h1>
+    <p id="pIntro"></p>
+  </div>
+</section>
+
+<section class="section detail-section">
+  <div class="wrap">
+    <div class="detail-top">
+      <div>
+        <div class="eyebrow">주요 커리큘럼</div>
+        <div class="curri-list" id="curriList"></div>
+      </div>
+      <div class="info-card">
+        <h3>과정 안내</h3>
+        <ul id="infoList"></ul>
+        <a href="index.html#contact" class="btn btn-red" style="width:100%;">상담 신청하기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 카네기인재개발원 경기1지역. 데일카네기 코리아 공식 라이선스 파트너.</div>
+</footer>
+
+<script>
+  var PROGRAMS = {
+    ceo: {
+      tag: 'FLAGSHIP · 12주', title: 'CEO 과정',
+      intro: '리더십 훈련의 시작, 성과를 만드는 인간경영 리더십. 경영자로서 마주하는 가장 어려운 문제 — 사람과 조직 — 을 정면으로 다루는 데일카네기의 대표 프로그램입니다.',
+      curri: [
+        ['Module 1','성공적 리더십의 기초 — 리더와 관리자의 차이를 이해하고 변화의 출발점을 세웁니다.'],
+        ['Module 2','자신감 향상 — 발표와 실습을 통해 흔들리지 않는 자기 확신을 훈련합니다.'],
+        ['Module 3','인간관계 증진 — 비난하지 않고 설득하는 법, 신뢰를 만드는 대화의 원칙.'],
+        ['Module 4','설득력 있는 커뮤니케이션 — 경청, 질문법, 피드백 전달까지.'],
+        ['Module 5','스트레스와 걱정 관리 — 압박 속에서도 흔들리지 않는 마음의 근력.'],
+        ['Module 6','동기부여와 갈등관리 — 구성원의 마음을 움직이고 갈등을 풀어냅니다.'],
+        ['Module 7','협력 이끌기 — 조직 안팎에서 협력을 이끌어내는 관계의 기술.'],
+        ['Module 8','리더십 실습과 영향력 확대 — 롤플레잉과 현업 적용 사례.'],
+        ['Module 9','팀 운영과 비전 실천 — 비전 제시와 실행 계획 수립.']
+      ],
+      info: [['대상','기업 대표 · 임원 · 경영자'], ['구성','주 1회 세션, 총 12주 과정'], ['정원','지역별 소수 정예'], ['방식','발표·롤플레잉·피드백·토론 중심 실습']]
+    },
+    dcc: {
+      tag: 'CORE · 8주', title: 'DCC · 데일카네기 코스',
+      intro: '110년 넘는 역사, 전 세계 900만 명의 삶을 바꾼 데일카네기 대표 프로그램. 자기확신·인간관계·커뮤니케이션의 기본기를 다집니다.',
+      curri: [
+        ['Week 1-2','자기 확신과 태도의 재정립'],
+        ['Week 3-4','인간관계의 원칙 — 비난하지 않고 설득하는 법'],
+        ['Week 5-6','효과적인 커뮤니케이션과 경청'],
+        ['Week 7-8','스트레스 관리와 실행 계획 수립']
+      ],
+      info: [['대상','자기확신·소통 역량을 키우고 싶은 모든 직장인'], ['구성','주 1회 세션, 총 8주 과정'], ['방식','참여형 실습 · 발표 · 피드백']]
+    },
+    sales: {
+      tag: 'SALES', title: 'DCS · 세일즈 트레이닝',
+      intro: '신뢰를 파는 세일즈, 관계로 성과를 만드는 영업 조직의 기술. 신뢰 기반의 세일즈 프로세스를 체계적으로 훈련합니다.',
+      curri: [
+        ['Step 1','신뢰 기반 고객 접근법'],
+        ['Step 2','니즈 파악을 위한 질문 기술'],
+        ['Step 3','설득력 있는 제안과 반론 처리'],
+        ['Step 4','장기적 고객 관계 구축']
+      ],
+      info: [['대상','영업 조직 · 세일즈 담당자'], ['방식','실전 롤플레잉 · 사례 중심 코칭']]
+    },
+    tla: {
+      tag: 'TLA · 6주', title: '리더십 어드밴티지',
+      intro: 'The Leadership Advantage — AI 시대, 성과를 만드는 리더의 결정적 차이를 훈련하는 과정입니다.',
+      curri: [
+        ['Week 1-2','리더의 자기 인식과 강점 발견'],
+        ['Week 3-4','신뢰와 영향력을 만드는 소통'],
+        ['Week 5-6','변화를 이끄는 실행 리더십']
+      ],
+      info: [['대상','중간관리자 · 팀장급 리더'], ['구성','주 1회 세션, 총 6주 과정']]
+    },
+    ltm: {
+      tag: 'LTM · 3주', title: '매니저·팀장 리더십',
+      intro: '처음 팀을 맡은 순간부터, 조직을 움직이는 관리자의 기본기를 훈련하는 실무형 리더십 과정입니다.',
+      curri: [
+        ['Week 1','팀장의 역할과 책임'],
+        ['Week 2','동기부여와 위임의 기술'],
+        ['Week 3','성과 관리와 피드백 대화법']
+      ],
+      info: [['대상','신임·실무형 팀장 및 매니저'], ['구성','주 1회 세션, 총 3주 과정']]
+    },
+    hip: {
+      tag: 'HIP', title: '고성과 프레젠테이션',
+      intro: 'High Impact Presentations — 한 번의 발표로 신뢰를 얻는 법, 설득력 있는 스피치 커뮤니케이션 기술을 훈련합니다.',
+      curri: [
+        ['Session 1','발표 불안 극복과 자신감 훈련'],
+        ['Session 2','메시지 구조화와 스토리텔링'],
+        ['Session 3','청중을 설득하는 전달력 훈련']
+      ],
+      info: [['대상','발표·보고가 잦은 직장인, 경영자'], ['방식','실전 발표 · 영상 피드백']]
+    },
+    dylp: {
+      tag: 'DYLP', title: '개인 공개 리더십 과정',
+      intro: '소속·직급에 관계없이, 누구나 참여할 수 있는 개인 대상 리더십 공개 과정입니다.',
+      curri: [
+        ['1부','자기 확신과 대인관계 기초'],
+        ['2부','커뮤니케이션과 리더십 실습']
+      ],
+      info: [['대상','개인 자격으로 참여 가능한 누구나']]
+    },
+    newleader: {
+      tag: 'NEW LEADER · 2일', title: '신임 리더 핵심 스킬',
+      intro: '리더가 처음인 사람에게 꼭 필요한 리더십의 첫걸음을 압축적으로 훈련하는 과정입니다.',
+      curri: [
+        ['Day 1','리더로서의 마인드셋 전환'],
+        ['Day 2','팀원과의 신뢰 구축 대화법']
+      ],
+      info: [['대상','처음 팀을 맡은 신임 리더·관리자'], ['구성','2일 집중 과정']]
+    },
+    campus: {
+      tag: 'CAMPUS', title: '대학생 과정',
+      intro: '사회 진출 전에 갖춰야 할 자기확신과 커뮤니케이션의 힘을 키우는 대학생 대상 과정입니다.',
+      curri: [
+        ['1부','자기 확신과 태도 훈련'],
+        ['2부','면접·발표를 위한 커뮤니케이션']
+      ],
+      info: [['대상','취업·사회 진출을 앞둔 대학생']]
+    },
+    youth: {
+      tag: 'YOUTH', title: '청소년 과정',
+      intro: '자신감과 대인관계 능력을 키우는 다음 세대를 위한 리더십 트레이닝입니다.',
+      curri: [
+        ['1부','자신감과 자기표현 훈련'],
+        ['2부','또래 관계와 리더십 기초']
+      ],
+      info: [['대상','청소년 (중·고등학생)']]
+    }
+  };
+
+  var params = new URLSearchParams(window.location.search);
+  var key = params.get('p') || 'ceo';
+  var p = PROGRAMS[key] || PROGRAMS.ceo;
+
+  document.getElementById('pageTitle').textContent = p.title + ' | 데일카네기';
+  document.getElementById('pageDesc').setAttribute('content', p.intro);
+  document.getElementById('crumbName').textContent = p.title;
+  document.getElementById('pTag').textContent = 'DALE CARNEGIE · ' + p.tag;
+  document.getElementById('pTitle').textContent = p.title;
+  document.getElementById('pIntro').textContent = p.intro;
+
+  var curriHost = document.getElementById('curriList');
+  p.curri.forEach(function(row){
+    var div = document.createElement('div');
+    div.className = 'curri-item';
+    div.innerHTML = '<div class="wk">'+row[0]+'</div><p>'+row[1]+'</p>';
+    curriHost.appendChild(div);
+  });
+
+  var infoHost = document.getElementById('infoList');
+  p.info.forEach(function(row){
+    var li = document.createElement('li');
+    li.innerHTML = '<span><b>'+row[0]+'</b> : '+row[1]+'</span>';
+    infoHost.appendChild(li);
+  });
+</script>
+
+</body>
+</html>
