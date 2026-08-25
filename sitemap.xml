@@ -12,4 +12,24 @@
   <url><loc>https://carnegie-ceo.co.kr/program.html?p=newleader</loc><priority>0.6</priority></url>
   <url><loc>https://carnegie-ceo.co.kr/program.html?p=campus</loc><priority>0.6</priority></url>
   <url><loc>https://carnegie-ceo.co.kr/program.html?p=youth</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=seoul</loc><priority>0.8</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=gangnam</loc><priority>0.8</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=suwon</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=siheung</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=goyang</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=hwaseong-osan</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=osan</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=uijeongbu-yangju-pocheon</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=paju</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=yongin</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=icheon-yeoju-yangpyeong</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=gwangju-hanam</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=gwangmyeong</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=daejeon</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=daegu</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=daegu-gyeongbuk</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=busan</loc><priority>0.7</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=ulsan</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=pohang</loc><priority>0.6</priority></url>
+  <url><loc>https://carnegie-ceo.co.kr/region.html?r=jeonbuk</loc><priority>0.6</priority></url>
 </urlset>
