@@ -275,6 +275,15 @@
   .network-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:18px;}
   .network-tags span{font-size:12px; padding:5px 10px; background:var(--cream-2); color:var(--gray); border:1px solid var(--line);}
 
+  /* ===== QUICK LINKS ===== */
+  .quicklinks-section{background:var(--black); padding-top:70px;}
+  .quick-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,.1); margin-top:20px; border:1px solid rgba(255,255,255,.1);}
+  .quick-card{background:var(--black-2); padding:30px 26px; display:block;}
+  .quick-card h4{font-family:var(--serif); font-size:18px; color:#fff; margin-bottom:8px;}
+  .quick-card p{font-size:13px; color:var(--gray-light); line-height:1.6;}
+  .quick-card:hover{background:var(--red);}
+  .quick-card:hover p{color:rgba(255,255,255,.85);}
+
   /* ===== PROGRAMS ===== */
   .programs-section{background:var(--black); color:#fff;}
   .programs-section .section-sub{color:var(--gray-light);}
@@ -415,34 +424,34 @@
       <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img nav-logo">
     </div>
     <nav class="menu">
-      <a href="#about">소개</a>
-      <a href="#ceo">CEO과정</a>
-      <a href="#programs">프로그램</a>
-      <a href="#schedule">개강일정</a>
-      <a href="#network">동문네트워크</a>
-      <a href="#voice">후기</a>
-      <a href="#faq">FAQ</a>
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="network.html">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
     </nav>
     <div class="nav-right">
       <a class="nav-tel" href="tel:010-5551-6230">
         <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
         010-5551-6230
       </a>
-      <a href="#contact" class="btn btn-red">상담신청</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
       <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('open')">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
   <div class="mobile-menu">
-    <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('open')">소개</a>
-    <a href="#ceo" onclick="document.querySelector('.mobile-menu').classList.remove('open')">CEO과정</a>
-    <a href="#programs" onclick="document.querySelector('.mobile-menu').classList.remove('open')">프로그램</a>
-    <a href="#schedule" onclick="document.querySelector('.mobile-menu').classList.remove('open')">개강일정</a>
-    <a href="#network" onclick="document.querySelector('.mobile-menu').classList.remove('open')">동문네트워크</a>
-    <a href="#voice" onclick="document.querySelector('.mobile-menu').classList.remove('open')">후기</a>
-    <a href="#faq" onclick="document.querySelector('.mobile-menu').classList.remove('open')">FAQ</a>
-    <a href="#contact" class="btn btn-red" style="margin-top:10px;" onclick="document.querySelector('.mobile-menu').classList.remove('open')">상담신청</a>
+    <a href="about.html">소개</a>
+    <a href="ceo-course.html">CEO과정</a>
+    <a href="programs.html">프로그램</a>
+    <a href="schedule.html">개강일정</a>
+    <a href="network.html">동문네트워크</a>
+    <a href="reviews.html">후기</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="btn btn-red" style="margin-top:10px;">상담신청</a>
   </div>
 </header>
 
@@ -454,8 +463,8 @@
     <h1>죽기 전 꼭 들어야 할<br>리더십강의<br>커뮤니케이션의 비법<br><em>데일카네기코리아</em></h1>
     <p class="lead">전 세계 90여 개국, 900만 명 이상이 거쳐간 데일카네기 리더십 트레이닝. 서울·경기·인천·대전·대구·부산·울산·광주 등 전국에서 최고경영자(CEO) 과정을 모집합니다.</p>
     <div class="hero-cta">
-      <a href="#contact" class="btn btn-red">상담 신청하기</a>
-      <a href="#ceo" class="btn btn-outline-light">CEO과정 알아보기</a>
+      <a href="contact.html" class="btn btn-red">상담 신청하기</a>
+      <a href="ceo-course.html" class="btn btn-outline-light">CEO과정 알아보기</a>
     </div>
     <div class="hero-stats">
       <div><div class="num">1912</div><div class="lbl">데일카네기 설립</div></div>
@@ -512,313 +521,31 @@
   </div>
 </section>
 
-<!-- ================= PERSONA / FOR WHOM ================= -->
-<section class="section" id="for-whom" style="padding-bottom:56px;">
-  <div class="wrap">
-    <div class="eyebrow">이런 분들께 추천합니다</div>
-    <h2 class="section-title">팀장 리더십부터 CEO 경영자 교육까지</h2>
-    <p class="section-sub">데일카네기는 처음 팀을 맡은 신임 리더부터 조직 전체를 이끄는 경영자까지, 사람을 이끄는 모든 순간에 필요한 리더십과 커뮤니케이션 교육입니다.</p>
-
-    <div class="persona-grid">
-      <div class="persona-card">
-        <div class="ptag">01</div>
-        <h4>팀장·신임 리더</h4>
-        <p>팀원 관리와 조직 소통이 어려운 신임 팀장·관리자를 위한 팀장 리더십 교육.</p>
-      </div>
-      <div class="persona-card">
-        <div class="ptag">02</div>
-        <h4>CEO·대표·임원</h4>
-        <p>조직이 커질수록 필요한 최고경영자과정 · 경영자 리더십 교육.</p>
-      </div>
-      <div class="persona-card">
-        <div class="ptag">03</div>
-        <h4>승진자·직장인</h4>
-        <p>승진 후 관계와 역할 변화가 부담스러운 직장인을 위한 커뮤니케이션 교육.</p>
-      </div>
-      <div class="persona-card">
-        <div class="ptag">04</div>
-        <h4>영업·상담직</h4>
-        <p>신뢰를 얻고 설득하는 대화가 핵심인 영업·상담 업무 종사자.</p>
-      </div>
-      <div class="persona-card">
-        <div class="ptag">05</div>
-        <h4>인간관계·자기계발</h4>
-        <p>자신감 있게 말하고 사람들에게 신뢰받는 사람이 되고 싶은 모든 분.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT / WHY ================= -->
-<section class="section" id="about">
-  <div class="wrap">
-    <div class="eyebrow">경영의 가장 어려운 숙제는, 결국 사람입니다</div>
-    <h2 class="section-title">왜 지금, 데일카네기인가</h2>
-    <p class="section-sub">기술과 전략은 배울 수 있어도, 사람의 마음을 얻고 조직을 움직이는 힘은 저절로 생기지 않습니다. 데일카네기는 110년 넘게 검증된 인간관계와 리더십의 원칙으로 이 문제에 답합니다.</p>
-
-    <div class="why-grid">
-      <div class="why-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="num">01 · 관계 증진</div>
-        <h3>신뢰를 얻는 인간관계</h3>
-        <p>고객·동료·구성원과의 관계에서 신뢰를 얻는 대화와 태도의 원칙을 익혀, 사람과 사람 사이의 거리를 좁힙니다.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <div class="num">02 · 협력 창출</div>
-        <h3>마음을 움직이는 소통</h3>
-        <p>설득이 아닌 공감으로 상대의 마음을 움직이는 커뮤니케이션 기술을 훈련해, 조직 내 협업의 속도를 높입니다.</p>
-      </div>
-      <div class="why-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
-        <div class="num">03 · 리더십 발휘</div>
-        <h3>조직을 이끄는 리더십</h3>
-        <p>자기확신과 스트레스 관리에서 출발해, 변화를 주도하고 성과로 연결하는 실행형 리더십을 완성합니다.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CEO COURSE ================= -->
+<!-- ================= CEO TEASER ================= -->
 <section class="section ceo-section" id="ceo">
   <div class="wrap">
-    <div class="ceo-top">
-      <div>
-        <div class="eyebrow">DALE CARNEGIE FOR CEO</div>
-        <h2 class="section-title">최고경영자(CEO) 리더십 과정</h2>
-        <p class="section-sub">경영자로서 마주하는 가장 어려운 문제 — 사람과 조직 — 을 정면으로 다루는 데일카네기의 대표 프로그램입니다. 매주 정해진 세션을 통해 자기 확신부터 조직 실행력까지 단계적으로 성장합니다.</p>
-
-        <div class="curri-list">
-          <div class="curri-item"><div class="wk">Module 1</div><div class="tx"><h4>성공적 리더십의 기초</h4><p>리더와 관리자의 차이를 이해하고 변화의 출발점을 세웁니다.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 2</div><div class="tx"><h4>자신감 향상</h4><p>발표와 실습을 통해 흔들리지 않는 자기 확신을 훈련합니다.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 3</div><div class="tx"><h4>인간관계 증진</h4><p>비난하지 않고 설득하는 법, 신뢰를 만드는 대화의 원칙.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 4</div><div class="tx"><h4>설득력 있는 커뮤니케이션</h4><p>경청, 질문법, 피드백 전달까지 아우르는 실전 화법.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 5</div><div class="tx"><h4>스트레스와 걱정 관리</h4><p>경영자로서 압박 속에서도 흔들리지 않는 마음의 근력을 기릅니다.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 6</div><div class="tx"><h4>동기부여와 갈등관리</h4><p>구성원의 마음을 움직이고 갈등을 건설적으로 풀어냅니다.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 7</div><div class="tx"><h4>협력 이끌기</h4><p>조직 안팎에서 협력을 이끌어내는 관계의 기술.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 8</div><div class="tx"><h4>리더십 실습과 영향력 확대</h4><p>롤플레잉과 현업 적용 사례로 리더십을 체화합니다.</p></div></div>
-          <div class="curri-item"><div class="wk">Module 9</div><div class="tx"><h4>팀 운영과 비전 실천</h4><p>비전을 제시하고 실행 계획으로 옮기는 마지막 단계입니다.</p></div></div>
-        </div>
-        <p style="margin-top:18px; font-size:13px; color:var(--gray);">※ 강의가 아닌 발표·롤플레잉·피드백·토론 중심의 참여형 실습으로 12주간 진행됩니다.</p>
-      </div>
-
-      <div class="ceo-card">
-        <span class="eyebrow" style="color:var(--red);">2026 하반기 모집 안내</span>
-        <h3>2026 하반기<br>CEO과정 모집</h3>
-        <p>서울·경기·인천·대전·대구·부산·울산·광주 등 전국 각 지역에서 동시 모집합니다. 지역별 정원이 있어 조기 마감될 수 있습니다.</p>
-        <ul>
-          <li>대상 : 기업 대표 · 임원 · 경영자</li>
-          <li>구성 : 주 1회 세션, 총 12주 과정</li>
-          <li>정원 : 지역별 소수 정예</li>
-          <li>일정 · 교육비 : 상담 신청 시 개별 안내</li>
-        </ul>
-        <a href="#contact" class="btn btn-red" style="width:100%;">지금 상담 신청하기</a>
-      </div>
+    <div class="eyebrow">DALE CARNEGIE FOR CEO</div>
+    <h2 class="section-title">최고경영자(CEO) 리더십 과정</h2>
+    <p class="section-sub">경영자로서 마주하는 가장 어려운 문제 — 사람과 조직 — 을 정면으로 다루는 데일카네기의 대표 프로그램입니다. 발표·롤플레잉·피드백 중심의 실습형 12주 과정으로, 서울·경기·인천·대전·대구·부산·울산·광주 등 전국에서 동시 모집합니다.</p>
+    <div style="display:flex; gap:14px; flex-wrap:wrap; margin-top:28px;">
+      <a href="ceo-course.html" class="btn btn-outline-dark">커리큘럼 자세히 보기</a>
+      <a href="contact.html" class="btn btn-red">지금 상담 신청하기</a>
     </div>
   </div>
 </section>
 
-<!-- ================= SCHEDULE ================= -->
-<section class="section" id="schedule" style="background:var(--cream-2);">
+<!-- ================= QUICK LINKS ================= -->
+<section class="section quicklinks-section" id="explore">
   <div class="wrap">
-    <div class="eyebrow">2026 하반기 전국 개강 일정</div>
-    <h2 class="section-title">데일카네기코리아 전국 CEO과정</h2>
-    <p class="section-sub">전국 각 지역에서 진행되는 최고경영자(CEO)과정 개강 일정입니다. 정확한 잔여 좌석은 상담 신청 시 안내해 드립니다.</p>
-
-    <div class="table-scroll">
-      <table class="sched-table">
-        <thead>
-          <tr><th>과정</th><th>지역</th><th>기수</th><th>개강</th><th>종강</th><th>요일</th><th>기간</th><th>수강료</th><th></th></tr>
-        </thead>
-        <tbody>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=jeonbuk">전북</a></td><td class="gisu">49기</td><td>08.13</td><td>12.03</td><td>목</td><td>16주</td><td>3,800,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">HIP</td><td><a href="region.html?r=ulsan">울산</a></td><td class="gisu">-</td><td>08.19</td><td>09.09</td><td>목</td><td>4주</td><td>1,500,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">DYLP</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">17기</td><td>08.20</td><td>08.21</td><td>목금</td><td>2일</td><td>800,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=yongin">용인</a></td><td class="gisu">58기</td><td>08.27</td><td>11.19</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=paju">파주</a></td><td class="gisu">27기</td><td>09.02</td><td>11.18</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=pohang">포항</a></td><td class="gisu">28기</td><td>09.03</td><td>11.26</td><td>목</td><td>12주</td><td>1,980,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=osan">오산</a></td><td class="gisu">65기</td><td>09.03</td><td>12.03</td><td>목</td><td>12주</td><td>2,750,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">LTM</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">8기</td><td>09.04</td><td>09.18</td><td>금</td><td>3주</td><td>1,200,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=hwaseong-osan">화성·오산</a></td><td class="gisu">42기</td><td>09.07</td><td>11.30</td><td>월</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=daegu">대구</a></td><td class="gisu">88기</td><td>09.07</td><td>11.03</td><td>월</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">103기</td><td>09.08</td><td>11.24</td><td>화</td><td>12주</td><td>4,000,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=icheon-yeoju-yangpyeong">이천·여주·양평</a></td><td class="gisu">53기</td><td>09.08</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=busan">부산</a></td><td class="gisu">78기</td><td>09.08</td><td>11.24</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=goyang">고양</a></td><td class="gisu">55기</td><td>09.14</td><td>12.07</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">TLA</td><td><a href="region.html?r=daegu-gyeongbuk">대구경북</a></td><td class="gisu">4기</td><td>09.15</td><td>10.20</td><td>화</td><td>6주</td><td>1,300,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=uijeongbu-yangju-pocheon">의정부·양주·포천</a></td><td class="gisu">28기</td><td>09.15</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=gwangju-hanam">광주·하남</a></td><td class="gisu">52기</td><td>09.15</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=gwangmyeong">광명</a></td><td class="gisu">57기</td><td>09.16</td><td>12.02</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=suwon">수원</a></td><td class="gisu">67기</td><td>09.17</td><td>12.10</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=siheung">시흥</a></td><td class="gisu">65기</td><td>09.17</td><td>12.10</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">CEO과정</td><td><a href="region.html?r=daejeon">대전</a></td><td class="gisu">53기</td><td>10.01</td><td>12.17</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-          <tr><td class="course">차세대 경영자</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">2기</td><td>10.01</td><td>12.17</td><td>목</td><td>12주</td><td>3,600,000원</td><td class="apply-cell"><a href="#contact">신청 →</a></td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="note-box">※ 위 일정은 2026년 하반기 기준이며, 상황에 따라 변경될 수 있습니다. 정확한 잔여 좌석은 전화(010-5551-6230) 또는 상담 신청으로 확인해 주세요.</div>
-
-    <div class="eyebrow" style="margin-top:40px;">업종·지역을 가리지 않는 CEO 리더십과정</div>
-    <p class="section-sub">제조업·서비스업·유통업·건설업·IT·의료(병원)·교육업 등 업종에 관계없이, 그리고 중소기업·스타트업·프랜차이즈 대표님까지 폭넓게 참여하고 계십니다. 세일즈·영업조직을 위한 리더십강의부터 조직 전체를 위한 경영진교육·임원교육까지, 데일카네기코리아가 함께합니다.</p>
-    <p class="section-sub" style="margin-top:14px;">서울(강남 포함)·경기(수원·시흥·고양·용인·화성·오산·의정부·양주·포천·파주·광명·이천·여주·양평·광주·하남)·인천·대전·대구(대구경북 포함)·부산·울산·포항·전주전북·광주(전남)·목포·여수·진주·창원·세종충남 등 전국 각 지역에서 CEO과정과 리더십강의를 진행합니다.</p>
-
-    <div class="region-tags" style="margin-top:22px;">
-      <a href="region.html?r=seoul">서울 CEO과정</a>
-      <a href="region.html?r=gangnam">강남 카네기</a>
-      <a href="#schedule">경기 CEO과정</a>
-      <a href="#schedule">인천 CEO과정</a>
-      <a href="region.html?r=daejeon">대전 CEO과정</a>
-      <a href="region.html?r=daegu">대구 CEO과정</a>
-      <a href="region.html?r=busan">부산 CEO과정</a>
-      <a href="region.html?r=ulsan">울산 CEO과정</a>
-      <a href="region.html?r=gwangju-hanam">광주 CEO과정</a>
-      <a href="#schedule">진주 CEO과정</a>
-      <a href="#schedule">창원 CEO과정</a>
-      <a href="#schedule">세종충남 CEO과정</a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ALUMNI NETWORK ================= -->
-<section class="section" id="network">
-  <div class="wrap">
-    <div class="eyebrow">과정 그 이후</div>
-    <h2 class="section-title">수료 후에도 이어지는 경영자 네트워크</h2>
-    <p class="section-sub">데일카네기 CEO과정의 인연은 수료로 끝나지 않습니다. 수료생들은 지역별·업종별 동문모임, 조찬모임, 골프모임 등을 통해 관계를 이어가고 있습니다.</p>
-
-    <div class="network-grid">
-      <div class="network-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg></div>
-        <h3>지역별 동문모임</h3>
-        <p>같은 기수, 같은 지역에서 함께 과정을 수료한 경영자들이 정기적으로 모여 관계를 이어갑니다.</p>
-      </div>
-      <div class="network-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M5 22h14"/><path d="M6 8h12l-1 6a5 5 0 0 1-10 0l-1-6z"/></svg></div>
-        <h3>업종별 조찬모임</h3>
-        <p>서로 다른 업종의 대표들이 아침 시간을 활용해 정보를 나누고 인맥을 넓히는 조찬 네트워킹입니다.</p>
-      </div>
-      <div class="network-card">
-        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
-        <h3>경영자 골프모임</h3>
-        <p>필드 위에서 이어지는 경영자 간의 친목과 신뢰. 데일카네기 CEO과정 수료생 골프 네트워크입니다.</p>
-      </div>
-    </div>
-
-    <div class="alumni-photos">
-      <figure><img src="동문회4.jpg" alt="2025 파주카네기 총동문회 하계 야유회"><figcaption>2025 파주카네기 총동문회 하계 야유회</figcaption></figure>
-      <figure><img src="동문회2.jpg" alt="한국카네기 CEO클럽 동문 만찬"><figcaption>한국카네기 CEO클럽 동문 만찬</figcaption></figure>
-      <figure><img src="동문회.jpg" alt="데일카네기 CEO과정 파주지역과정 25기"><figcaption>CEO과정 파주지역과정 25기</figcaption></figure>
-      <figure><img src="동문회3.jpg" alt="한국카네기 CEO클럽 파주 총동문회 회장 이·취임식"><figcaption>파주 총동문회 16·17대 회장 이·취임식</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PROGRAMS ================= -->
-<section class="section programs-section" id="programs">
-  <div class="wrap">
-    <div class="eyebrow">FULL PROGRAM LINE-UP</div>
-    <h2 class="section-title" style="color:#fff;">데일카네기 프로그램 라인업</h2>
-    <p class="section-sub">CEO과정을 중심으로, 데일카네기 코리아의 전체 프로그램 라인업을 함께 안내해 드립니다.</p>
-
-    <div class="prog-grid">
-      <a href="program.html?p=ceo" class="prog-card featured">
-        <div><div class="tag">FLAGSHIP · 12주</div><h4>CEO 과정</h4></div>
-        <p>리더십 훈련의 시작, 성과를 만드는 인간경영 리더십.</p>
-      </a>
-      <a href="program.html?p=dcc" class="prog-card">
-        <div><div class="tag">CORE · 8주</div><h4>DCC · 데일카네기 코스</h4></div>
-        <p>110년 넘는 역사, 전 세계 900만 명의 삶을 바꾼 데일카네기 대표 프로그램.</p>
-      </a>
-      <a href="program.html?p=sales" class="prog-card">
-        <div><div class="tag">SALES</div><h4>DCS · 세일즈 트레이닝</h4></div>
-        <p>신뢰를 파는 세일즈, 관계로 성과를 만드는 영업 조직의 기술.</p>
-      </a>
-      <a href="program.html?p=tla" class="prog-card">
-        <div><div class="tag">TLA · 6주</div><h4>리더십 어드밴티지</h4></div>
-        <p>AI 시대, 성과를 만드는 리더의 결정적 차이.</p>
-      </a>
-      <a href="program.html?p=ltm" class="prog-card">
-        <div><div class="tag">LTM · 3주</div><h4>매니저·팀장 리더십</h4></div>
-        <p>처음 팀을 맡은 순간부터, 조직을 움직이는 관리자의 기본기.</p>
-      </a>
-      <a href="program.html?p=hip" class="prog-card">
-        <div><div class="tag">HIP</div><h4>고성과 프레젠테이션</h4></div>
-        <p>한 번의 발표로 신뢰를 얻는 법, 설득력 있는 스피치의 기술.</p>
-      </a>
-      <a href="program.html?p=dylp" class="prog-card">
-        <div><div class="tag">DYLP</div><h4>개인 공개 리더십 과정</h4></div>
-        <p>소속·직급에 관계없이, 누구나 참여할 수 있는 개인 리더십 공개 과정.</p>
-      </a>
-      <a href="program.html?p=newleader" class="prog-card">
-        <div><div class="tag">NEW LEADER · 2일</div><h4>신임 리더 핵심 스킬</h4></div>
-        <p>리더가 처음인 사람에게 꼭 필요한 리더십의 첫걸음.</p>
-      </a>
-      <a href="program.html?p=campus" class="prog-card">
-        <div><div class="tag">CAMPUS</div><h4>대학생 과정</h4></div>
-        <p>사회 진출 전에 갖춰야 할 자기확신과 커뮤니케이션의 힘.</p>
-      </a>
-      <a href="program.html?p=youth" class="prog-card">
-        <div><div class="tag">YOUTH</div><h4>청소년 과정</h4></div>
-        <p>자신감과 대인관계 능력을 키우는 다음 세대 리더십 트레이닝.</p>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ================= VOICE / TESTIMONIAL ================= -->
-<section class="section" id="voice">
-  <div class="wrap">
-    <div class="eyebrow">전 세계 리더들의 공통점</div>
-    <h2 class="section-title">데일카네기를 거쳐간 사람들</h2>
-    <p class="section-sub">국내외 유수 기업의 경영자와 리더들이 데일카네기의 원칙을 통해 조직과 관계의 변화를 경험했습니다.</p>
-
-    <div class="voice-grid">
-      <div class="voice-card"><div class="mark">“</div><p>포춘 500대 기업 중 400개 이상이 데일카네기 트레이닝을 도입해 조직의 리더십과 커뮤니케이션 역량을 강화해왔습니다.</p><div class="who">데일카네기 글로벌 도입 현황</div></div>
-      <div class="voice-card"><div class="mark">“</div><p>1936년 초판된 「인간관계론」은 전 세계에서 1억 부 이상 판매되며 자기계발 분야의 고전으로 자리잡았습니다.</p><div class="who">데일카네기 「인간관계론」</div></div>
-      <div class="voice-card"><div class="mark">“</div><p>1992년 한국에 도입된 이래, 데일카네기 코리아는 전국 네트워크를 통해 기업·경영자 교육을 이어오고 있습니다.</p><div class="who">데일카네기 코리아</div></div>
-    </div>
-    <div class="note-box">※ 수강생들의 실제 후기·사진·영상은 순차적으로 업데이트될 예정입니다. 상담 시 실제 수강 사례를 자세히 안내해 드립니다.</div>
-
-    <div style="background:var(--black); padding:44px 40px; margin-top:52px;">
-      <div class="eyebrow" style="color:var(--red);">데일카네기 원칙, 책 속의 한 문장</div>
-      <h3 style="color:#fff; font-size:22px; margin-bottom:6px;">도서에서 배우는 원칙</h3>
-      <div class="book-grid" style="grid-template-columns:repeat(2,1fr);">
-        <div class="book-card">
-          <div class="yr">인간관계론 · 1936</div>
-          <h4>“비난하지 말고, 비판하지 말고, 불평하지 말라.”</h4>
-          <p>사람을 다루는 근본 원칙의 첫걸음. 상대를 바꾸려 하기 전에, 먼저 이해하고 진심으로 관심을 가지라는 데일카네기의 핵심 메시지입니다.</p>
-        </div>
-        <div class="book-card">
-          <div class="yr">자기관리론 · 1948</div>
-          <h4>“오늘 하루만을 충실하게 살아라.”</h4>
-          <p>어제의 후회와 내일의 불안 대신, '오늘'이라는 밀폐된 공간에 집중하라는 걱정 극복의 원칙 — CEO과정 스트레스 관리 모듈의 바탕이 되는 내용입니다.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="eyebrow" style="margin-top:52px;">도서 인사이트</div>
-    <h3 class="section-title" style="font-size:24px;">데일카네기 인간관계론·긍정태도론, 다시 읽기</h3>
-    <p class="section-sub">CEO과정의 뿌리가 된 두 권의 책을 다시 짚어봅니다. 이미 책을 읽어보신 분이라면, 그 원칙을 실전에서 훈련하는 과정이 궁금해지실 거예요.</p>
-
-    <div class="review-grid">
-      <div class="review-card">
-        <span class="rv-badge">BOOK REVIEW</span>
-        <h4>데일카네기 인간관계론</h4>
-        <div class="rv-meta">Dale Carnegie · 1936년 초판 · 전 세계 1억 부 이상 판매</div>
-        <p>「인간관계론」을 읽다 보면 가장 먼저 마주치는 문장이 있습니다. "비난하지 말고, 비판하지 말고, 불평하지 말라." 처음 읽을 땐 너무 당연한 말 같지만, 막상 조직에서 사람을 이끌다 보면 이 원칙을 지키기가 얼마나 어려운지 깨닫게 됩니다.</p>
-        <p>책은 상대방의 입장에서 생각하기, 진심 어린 관심 갖기, 이름을 기억하기처럼 사소해 보이지만 실천하기 어려운 원칙들을 사례 중심으로 풀어냅니다. 90년 가까이 지난 책인데도 지금 조직 생활, 특히 리더의 자리에 있는 분들에게 여전히 유효한 이유입니다.</p>
-        <p>다만 책으로 원칙을 '아는 것'과 실제 상황에서 '적용하는 것'은 다른 문제입니다. 데일카네기 CEO과정과 DCC(데일카네기 코스)는 바로 이 책의 원칙들을 발표·롤플레잉·피드백을 통해 몸에 익히는 실습형 프로그램입니다.</p>
-        <a href="index.html#ceo" class="rv-link">인간관계론의 원칙, CEO과정에서 훈련하기 →</a>
-      </div>
-      <div class="review-card">
-        <span class="rv-badge">BOOK REVIEW</span>
-        <h4>데일카네기 긍정태도론</h4>
-        <div class="rv-meta">Dale Carnegie · 1930년대 라디오 원고 · 현대지성 초판 완역 시리즈</div>
-        <p>「긍정태도론」은 데일카네기가 대공황 시기 라디오 방송을 통해 대중에게 전했던 미발표 원고를 엮은 책입니다. 「인간관계론」을 집필하던 바로 그 시기의 기록이라, 카네기 사상의 뿌리를 엿볼 수 있는 책이기도 합니다.</p>
-        <p>이 책에서 가장 인상적인 대목은 "전문 지식이 성공에 미치는 영향은 15%에 불과하고, 나머지 85%는 태도"라는 결론입니다. 실력보다 태도가 성과를 가른다는 이 통찰은, 경영자가 조직을 이끌 때 왜 인간관계와 커뮤니케이션이 우선되어야 하는지를 설명해줍니다.</p>
-        <p>이 '태도'를 어떻게 실제로 바꿀 수 있는지 궁금하셨다면, 데일카네기 CEO과정의 자기확신·스트레스 관리 모듈이 바로 그 답을 찾는 과정입니다.</p>
-        <a href="index.html#ceo" class="rv-link">긍정적 태도, CEO과정에서 훈련하기 →</a>
-      </div>
+    <div class="eyebrow">MORE TO EXPLORE</div>
+    <h2 class="section-title" style="color:#fff;">더 알아보기</h2>
+    <div class="quick-grid">
+      <a href="about.html" class="quick-card"><h4>소개</h4><p>왜 지금 데일카네기인가, 이런 분들께 추천</p></a>
+      <a href="programs.html" class="quick-card"><h4>프로그램</h4><p>CEO·DCC·TLA·HIP 등 전체 라인업</p></a>
+      <a href="schedule.html" class="quick-card"><h4>개강일정</h4><p>전국 지역별 2026 하반기 최신 일정</p></a>
+      <a href="network.html" class="quick-card"><h4>동문네트워크</h4><p>총동문회·경영자 골프모임·조찬모임</p></a>
+      <a href="reviews.html" class="quick-card"><h4>후기</h4><p>인간관계론·긍정태도론 도서 인사이트</p></a>
+      <a href="faq.html" class="quick-card"><h4>FAQ</h4><p>교육비·개강일 등 자주 묻는 질문</p></a>
     </div>
   </div>
 </section>
@@ -917,10 +644,10 @@
       <div class="footer-links">
         <div>
           <h5>바로가기</h5>
-          <a href="#about">소개</a>
-          <a href="#ceo">CEO과정</a>
-          <a href="#schedule">개강일정</a>
-          <a href="#contact">상담신청</a>
+          <a href="about.html">소개</a>
+          <a href="ceo-course.html">CEO과정</a>
+          <a href="schedule.html">개강일정</a>
+          <a href="contact.html">상담신청</a>
         </div>
         <div>
           <h5>연락처</h5>

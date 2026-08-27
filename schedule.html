@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 하반기 전국 개강일정 | 데일카네기코리아 CEO과정</title>
+<meta name="description" content="데일카네기코리아 2026 하반기 전국 CEO과정 개강 일정 — 서울·경기·인천·대전·대구·부산·울산·광주 등 전국 각 지역 기수·개강일·수강료 확인.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bd1622'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' font-weight='800' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --cream-2:#efe8d8; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream-2); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .section{padding:60px 0 88px;}
+  .section-title{font-size:clamp(26px,4vw,38px); margin-bottom:14px;}
+  .section-sub{color:var(--gray); font-size:15.5px; line-height:1.75; max-width:680px;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo-img{height:44px; width:auto; filter:invert(1); mix-blend-mode:screen; display:block;}
+  nav.menu{display:flex; align-items:center; gap:30px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 60px;}
+  .page-hero .eyebrow{color:var(--red);}
+  .page-hero .eyebrow::before{background:var(--red);}
+  .page-hero h1{font-size:clamp(30px,5vw,48px); color:#fff; max-width:760px;}
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .table-scroll{overflow-x:auto; margin-top:36px; border:1px solid var(--line);}
+  table.sched-table{width:100%; border-collapse:collapse; min-width:760px; background:var(--white);}
+  table.sched-table th, table.sched-table td{padding:14px 18px; text-align:left; font-size:14px; border-bottom:1px solid var(--line); white-space:nowrap;}
+  table.sched-table thead th{background:var(--black); color:#fff; font-weight:700; font-size:12.5px; letter-spacing:.05em;}
+  table.sched-table tbody tr:hover{background:var(--cream-2);}
+  table.sched-table td.course{font-weight:700;}
+  table.sched-table td.gisu{color:var(--red); font-weight:700;}
+  table.sched-table td.apply-cell a{color:var(--red); font-weight:700; border-bottom:1px solid var(--red);}
+  table.sched-table td a:not(.apply-cell a){font-weight:600; border-bottom:1px dotted var(--gray-light);}
+  table.sched-table td a:not(.apply-cell a):hover{color:var(--red); border-color:var(--red);}
+  .note-box{margin-top:22px; padding:16px 20px; border:1px dashed var(--gray-light); font-size:13px; color:var(--gray); background:var(--white);}
+
+  .region-tags{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .region-tags a{padding:9px 18px; border:1px solid var(--line); font-size:13.5px; font-weight:600; color:var(--black); background:var(--white);}
+  .region-tags a:hover{background:var(--red); border-color:var(--red); color:#fff;}
+
+  .cta-strip{background:var(--red); color:#fff; padding:56px 0; text-align:center;}
+  .cta-strip h2{color:#fff; font-size:clamp(22px,3vw,30px); margin-bottom:18px;}
+  .cta-strip .btn{background:#fff; color:var(--red); font-weight:800;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+  .float-cta{position:fixed; right:22px; bottom:22px; z-index:90; background:var(--red); color:#fff; padding:14px 20px; border-radius:2px; display:flex; align-items:center; gap:8px; font-weight:700; font-size:14px; box-shadow:0 8px 24px rgba(0,0,0,.35);}
+  .float-cta svg{width:16px; height:16px; fill:#fff;}
+
+  @media (max-width:920px){ nav.menu{display:none;} .nav-tel{display:none;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
+    <nav class="menu">
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html" class="current">개강일정</a>
+      <a href="network.html">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">홈</a> / 개강일정</div>
+    <div class="eyebrow">2026 하반기 전국 개강 일정</div>
+    <h1>데일카네기코리아 전국 CEO과정</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="section-sub">전국 각 지역에서 진행되는 최고경영자(CEO)과정 개강 일정입니다. 정확한 잔여 좌석은 상담 신청 시 안내해 드립니다.</p>
+
+    <div class="table-scroll">
+      <table class="sched-table">
+        <thead>
+          <tr><th>과정</th><th>지역</th><th>기수</th><th>개강</th><th>종강</th><th>요일</th><th>기간</th><th>수강료</th><th></th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=jeonbuk">전북</a></td><td class="gisu">49기</td><td>08.13</td><td>12.03</td><td>목</td><td>16주</td><td>3,800,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">HIP</td><td><a href="region.html?r=ulsan">울산</a></td><td class="gisu">-</td><td>08.19</td><td>09.09</td><td>목</td><td>4주</td><td>1,500,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">DYLP</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">17기</td><td>08.20</td><td>08.21</td><td>목금</td><td>2일</td><td>800,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=yongin">용인</a></td><td class="gisu">58기</td><td>08.27</td><td>11.19</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=paju">파주</a></td><td class="gisu">27기</td><td>09.02</td><td>11.18</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=pohang">포항</a></td><td class="gisu">28기</td><td>09.03</td><td>11.26</td><td>목</td><td>12주</td><td>1,980,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=osan">오산</a></td><td class="gisu">65기</td><td>09.03</td><td>12.03</td><td>목</td><td>12주</td><td>2,750,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">LTM</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">8기</td><td>09.04</td><td>09.18</td><td>금</td><td>3주</td><td>1,200,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=hwaseong-osan">화성·오산</a></td><td class="gisu">42기</td><td>09.07</td><td>11.30</td><td>월</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=daegu">대구</a></td><td class="gisu">88기</td><td>09.07</td><td>11.03</td><td>월</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">103기</td><td>09.08</td><td>11.24</td><td>화</td><td>12주</td><td>4,000,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=icheon-yeoju-yangpyeong">이천·여주·양평</a></td><td class="gisu">53기</td><td>09.08</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=busan">부산</a></td><td class="gisu">78기</td><td>09.08</td><td>11.24</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=goyang">고양</a></td><td class="gisu">55기</td><td>09.14</td><td>12.07</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">TLA</td><td><a href="region.html?r=daegu-gyeongbuk">대구경북</a></td><td class="gisu">4기</td><td>09.15</td><td>10.20</td><td>화</td><td>6주</td><td>1,300,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=uijeongbu-yangju-pocheon">의정부·양주·포천</a></td><td class="gisu">28기</td><td>09.15</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=gwangju-hanam">광주·하남</a></td><td class="gisu">52기</td><td>09.15</td><td>12.01</td><td>화</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=gwangmyeong">광명</a></td><td class="gisu">57기</td><td>09.16</td><td>12.02</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=suwon">수원</a></td><td class="gisu">67기</td><td>09.17</td><td>12.10</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=siheung">시흥</a></td><td class="gisu">65기</td><td>09.17</td><td>12.10</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td><a href="region.html?r=daejeon">대전</a></td><td class="gisu">53기</td><td>10.01</td><td>12.17</td><td>목</td><td>12주</td><td>2,900,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+          <tr><td class="course">차세대 경영자</td><td><a href="region.html?r=seoul">서울</a></td><td class="gisu">2기</td><td>10.01</td><td>12.17</td><td>목</td><td>12주</td><td>3,600,000원</td><td class="apply-cell"><a href="contact.html">신청 →</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note-box">※ 위 일정은 2026년 하반기 기준이며, 상황에 따라 변경될 수 있습니다. 정확한 잔여 좌석은 전화(010-5551-6230) 또는 상담 신청으로 확인해 주세요.</div>
+
+    <div class="eyebrow" style="margin-top:40px;">업종·지역을 가리지 않는 CEO 리더십과정</div>
+    <p class="section-sub">제조업·서비스업·유통업·건설업·IT·의료(병원)·교육업 등 업종에 관계없이, 그리고 중소기업·스타트업·프랜차이즈 대표님까지 폭넓게 참여하고 계십니다. 세일즈·영업조직을 위한 리더십강의부터 조직 전체를 위한 경영진교육·임원교육까지, 데일카네기코리아가 함께합니다.</p>
+    <p class="section-sub" style="margin-top:14px;">서울(강남 포함)·경기(수원·시흥·고양·용인·화성·오산·의정부·양주·포천·파주·광명·이천·여주·양평·광주·하남)·인천·대전·대구(대구경북 포함)·부산·울산·포항·전주전북·광주(전남)·목포·여수·진주·창원·세종충남 등 전국 각 지역에서 CEO과정과 리더십강의를 진행합니다.</p>
+
+    <div class="region-tags">
+      <a href="region.html?r=seoul">서울 CEO과정</a>
+      <a href="region.html?r=gangnam">강남 카네기</a>
+      <a href="region.html?r=daejeon">대전 CEO과정</a>
+      <a href="region.html?r=daegu">대구 CEO과정</a>
+      <a href="region.html?r=busan">부산 CEO과정</a>
+      <a href="region.html?r=ulsan">울산 CEO과정</a>
+      <a href="region.html?r=gwangju-hanam">광주 CEO과정</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="wrap">
+    <h2>내 지역 일정이 궁금하다면 지금 문의하세요</h2>
+    <a href="contact.html" class="btn">상담 신청하기</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">데일카네기코리아는 바인그룹이 운영합니다. © 2026 데일카네기코리아. All rights reserved.</div>
+</footer>
+
+<a href="tel:010-5551-6230" class="float-cta">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+  전화상담
+</a>
+
+</body>
+</html>

@@ -85,21 +85,21 @@
   <div class="nav">
     <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
     <nav class="menu">
-      <a href="index.html#about">소개</a>
-      <a href="index.html#programs">프로그램</a>
-      <a href="index.html#schedule">개강일정</a>
-      <a href="index.html#contact">상담신청</a>
+      <a href="about.html">소개</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="contact.html">상담신청</a>
     </nav>
     <div class="nav-right">
       <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
-      <a href="index.html#contact" class="btn btn-red">상담신청</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
     </div>
   </div>
 </header>
 
 <section class="page-hero">
   <div class="wrap">
-    <div class="breadcrumb"><a href="index.html">홈</a> / <a href="index.html#schedule">개강일정</a> / <span id="crumbName">지역</span></div>
+    <div class="breadcrumb"><a href="index.html">홈</a> / <a href="schedule.html">개강일정</a> / <span id="crumbName">지역</span></div>
     <div class="eyebrow">DALE CARNEGIE KOREA</div>
     <h1 id="pTitle">지역 CEO과정</h1>
     <p id="pIntro"></p>
@@ -200,14 +200,14 @@
   document.getElementById('pIntro').textContent = regionName + ' 지역 대표·자영업자·업종 경영자를 위한 데일카네기 리더십 트레이닝입니다. 창업 1세대부터 2세 경영승계를 준비하는 후계자까지, 인간관계와 소통의 원칙으로 조직을 이끄는 힘을 기릅니다.';
   document.getElementById('scheduleTitle').textContent = regionName + ' 개강 일정';
   document.getElementById('whyTitle').textContent = regionName + ' 경영자들이 데일카네기를 선택하는 이유';
-  document.getElementById('alumniText').innerHTML = '수료는 끝이 아니라 시작입니다. ' + regionName + ' 카네기 총동문회를 통해 지역·업종을 넘나드는 비즈니스모임, 경영자 네트워크, 조찬모임, 골프모임으로 관계를 이어가실 수 있습니다. <a href="index.html#network" style="color:var(--red); font-weight:700;">동문 네트워크 자세히 보기 →</a>';
+  document.getElementById('alumniText').innerHTML = '수료는 끝이 아니라 시작입니다. ' + regionName + ' 카네기 총동문회를 통해 지역·업종을 넘나드는 비즈니스모임, 경영자 네트워크, 조찬모임, 골프모임으로 관계를 이어가실 수 있습니다. <a href="network.html" style="color:var(--red); font-weight:700;">동문 네트워크 자세히 보기 →</a>';
   document.getElementById('ctaTitle').textContent = regionName + ' 지역, 지금 상담을 신청하세요';
 
   var tbody = document.getElementById('courseRows');
   if(rows.length){
     rows.forEach(function(r){
       var tr = document.createElement('tr');
-      tr.innerHTML = '<td class="course">'+r.course+'</td><td class="gisu">'+r.gisu+'</td><td>'+r.start+'</td><td>'+r.end+'</td><td>'+r.day+'</td><td>'+r.dur+'</td><td>'+r.price+'</td><td><a href="index.html#contact">신청 →</a></td>';
+      tr.innerHTML = '<td class="course">'+r.course+'</td><td class="gisu">'+r.gisu+'</td><td>'+r.start+'</td><td>'+r.end+'</td><td>'+r.day+'</td><td>'+r.dur+'</td><td>'+r.price+'</td><td><a href="contact.html">신청 →</a></td>';
       tbody.appendChild(tr);
     });
   } else {

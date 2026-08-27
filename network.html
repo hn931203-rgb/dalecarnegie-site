@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>동문 네트워크 | 데일카네기 총동문회·경영자 골프모임</title>
+<meta name="description" content="데일카네기 CEO과정 수료 후에도 이어지는 총동문회, 업종별 조찬모임, 경영자 골프모임, 비즈니스 네트워크를 소개합니다.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bd1622'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' font-weight='800' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .section{padding:60px 0 88px;}
+  .section-title{font-size:clamp(26px,4vw,38px); margin-bottom:14px;}
+  .section-sub{color:var(--gray); font-size:15.5px; line-height:1.75; max-width:680px;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo-img{height:44px; width:auto; filter:invert(1); mix-blend-mode:screen; display:block;}
+  nav.menu{display:flex; align-items:center; gap:30px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 60px;}
+  .page-hero .eyebrow{color:var(--red);}
+  .page-hero .eyebrow::before{background:var(--red);}
+  .page-hero h1{font-size:clamp(30px,5vw,48px); color:#fff; max-width:760px;}
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .network-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); margin-top:20px; border:1px solid var(--line);}
+  .network-card{background:var(--white); padding:36px 30px;}
+  .network-card .icon{width:40px; height:40px; margin-bottom:16px;}
+  .network-card .icon svg{width:100%; height:100%; stroke:var(--red); fill:none; stroke-width:1.4;}
+  .network-card h3{font-size:19px; margin-bottom:10px;}
+  .network-card p{color:var(--gray); font-size:14px; line-height:1.75;}
+
+  .alumni-photos{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:44px;}
+  .alumni-photos figure{margin:0; overflow:hidden; background:var(--black); position:relative;}
+  .alumni-photos img{width:100%; height:220px; object-fit:cover; display:block; filter:grayscale(.15); transition:transform .35s ease, filter .35s ease;}
+  .alumni-photos figure:hover img{transform:scale(1.06); filter:grayscale(0);}
+  .alumni-photos figcaption{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; font-size:11.5px; color:#fff; background:linear-gradient(0deg, rgba(0,0,0,.75), transparent);}
+
+  .cta-strip{background:var(--red); color:#fff; padding:56px 0; text-align:center;}
+  .cta-strip h2{color:#fff; font-size:clamp(22px,3vw,30px); margin-bottom:18px;}
+  .cta-strip .btn{background:#fff; color:var(--red); font-weight:800;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+  .float-cta{position:fixed; right:22px; bottom:22px; z-index:90; background:var(--red); color:#fff; padding:14px 20px; border-radius:2px; display:flex; align-items:center; gap:8px; font-weight:700; font-size:14px; box-shadow:0 8px 24px rgba(0,0,0,.35);}
+  .float-cta svg{width:16px; height:16px; fill:#fff;}
+
+  @media (max-width:920px){
+    nav.menu{display:none;} .nav-tel{display:none;}
+    .network-grid{grid-template-columns:1fr;}
+    .alumni-photos{grid-template-columns:repeat(2,1fr);}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
+    <nav class="menu">
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="network.html" class="current">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">홈</a> / 동문네트워크</div>
+    <div class="eyebrow">과정 그 이후</div>
+    <h1>수료 후에도 이어지는 경영자 네트워크</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="section-sub">데일카네기 CEO과정의 인연은 수료로 끝나지 않습니다. 수료생들은 지역별·업종별 총동문회, 비즈니스모임, 조찬모임, 골프모임 등을 통해 관계를 이어가고 있습니다.</p>
+
+    <div class="network-grid">
+      <div class="network-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg></div>
+        <h3>지역별 총동문회</h3>
+        <p>같은 기수, 같은 지역에서 함께 과정을 수료한 경영자들이 정기적으로 모여 관계를 이어갑니다.</p>
+      </div>
+      <div class="network-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2v6"/><path d="M5 22h14"/><path d="M6 8h12l-1 6a5 5 0 0 1-10 0l-1-6z"/></svg></div>
+        <h3>업종별 조찬모임</h3>
+        <p>서로 다른 업종의 대표들이 아침 시간을 활용해 정보를 나누고 인맥을 넓히는 조찬 비즈니스모임입니다.</p>
+      </div>
+      <div class="network-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+        <h3>경영자 골프모임</h3>
+        <p>필드 위에서 이어지는 경영자 간의 친목과 신뢰. 데일카네기 CEO과정 수료생 골프 네트워크입니다.</p>
+      </div>
+    </div>
+
+    <div class="alumni-photos">
+      <figure><img src="동문회4.jpg" alt="2025 파주카네기 총동문회 하계 야유회"><figcaption>2025 파주카네기 총동문회 하계 야유회</figcaption></figure>
+      <figure><img src="동문회2.jpg" alt="한국카네기 CEO클럽 동문 만찬"><figcaption>한국카네기 CEO클럽 동문 만찬</figcaption></figure>
+      <figure><img src="동문회.jpg" alt="데일카네기 CEO과정 파주지역과정 25기"><figcaption>CEO과정 파주지역과정 25기</figcaption></figure>
+      <figure><img src="동문회3.jpg" alt="한국카네기 CEO클럽 파주 총동문회 회장 이·취임식"><figcaption>파주 총동문회 16·17대 회장 이·취임식</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="wrap">
+    <h2>수료 후 네트워크까지, 지금 상담받아보세요</h2>
+    <a href="contact.html" class="btn">상담 신청하기</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">데일카네기코리아는 바인그룹이 운영합니다. © 2026 데일카네기코리아. All rights reserved.</div>
+</footer>
+
+<a href="tel:010-5551-6230" class="float-cta">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+  전화상담
+</a>
+
+</body>
+</html>

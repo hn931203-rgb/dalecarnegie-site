@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>데일카네기 프로그램 라인업 | CEO과정·DCC·TLA·HIP</title>
+<meta name="description" content="데일카네기코리아 전체 프로그램 라인업 — CEO과정, DCC 데일카네기 코스, 세일즈 트레이닝, TLA 리더십 어드밴티지, LTM 매니저 리더십, HIP 프레젠테이션, DYLP, 신임 리더, 대학생·청소년 과정.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bd1622'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' font-weight='800' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .section{padding:88px 0;}
+  .section-title{font-size:clamp(26px,4vw,38px); margin-bottom:14px;}
+  .section-sub{color:var(--gray-light); font-size:15.5px; line-height:1.75; max-width:640px;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo-img{height:44px; width:auto; filter:invert(1); mix-blend-mode:screen; display:block;}
+  nav.menu{display:flex; align-items:center; gap:30px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 60px;}
+  .page-hero .eyebrow{color:var(--red);}
+  .page-hero .eyebrow::before{background:var(--red);}
+  .page-hero h1{font-size:clamp(30px,5vw,48px); color:#fff; max-width:760px;}
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .programs-section{background:var(--black); color:#fff; padding-top:0;}
+  .prog-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:rgba(255,255,255,.1); margin-top:20px; border:1px solid rgba(255,255,255,.1);}
+  .prog-card{background:var(--black-2); padding:34px 28px; min-height:190px; display:flex; flex-direction:column; justify-content:space-between;}
+  .prog-card .tag{font-size:11px; letter-spacing:.12em; color:var(--red); font-weight:800; margin-bottom:14px;}
+  .prog-card h4{font-family:var(--serif); font-size:19px; color:#fff; margin-bottom:10px;}
+  .prog-card p{font-size:13px; color:var(--gray-light); line-height:1.7;}
+  .prog-card.featured{background:var(--red);}
+  .prog-card.featured .tag{color:rgba(255,255,255,.85);}
+  .prog-card.featured p{color:rgba(255,255,255,.85);}
+
+  .cta-strip{background:var(--red); color:#fff; padding:56px 0; text-align:center;}
+  .cta-strip h2{color:#fff; font-size:clamp(22px,3vw,30px); margin-bottom:18px;}
+  .cta-strip .btn{background:#fff; color:var(--red); font-weight:800;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+  .float-cta{position:fixed; right:22px; bottom:22px; z-index:90; background:var(--red); color:#fff; padding:14px 20px; border-radius:2px; display:flex; align-items:center; gap:8px; font-weight:700; font-size:14px; box-shadow:0 8px 24px rgba(0,0,0,.35);}
+  .float-cta svg{width:16px; height:16px; fill:#fff;}
+
+  @media (max-width:920px){
+    nav.menu{display:none;} .nav-tel{display:none;}
+    .prog-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
+    <nav class="menu">
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html" class="current">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="network.html">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">홈</a> / 프로그램</div>
+    <div class="eyebrow">FULL PROGRAM LINE-UP</div>
+    <h1>데일카네기 프로그램 라인업</h1>
+  </div>
+</section>
+
+<section class="section programs-section">
+  <div class="wrap">
+    <p class="section-sub">CEO과정을 중심으로, 데일카네기 코리아의 전체 프로그램 라인업을 함께 안내해 드립니다. 카드를 클릭하면 커리큘럼과 대상을 자세히 볼 수 있어요.</p>
+
+    <div class="prog-grid">
+      <a href="program.html?p=ceo" class="prog-card featured">
+        <div><div class="tag">FLAGSHIP · 12주</div><h4>CEO 과정</h4></div>
+        <p>리더십 훈련의 시작, 성과를 만드는 인간경영 리더십.</p>
+      </a>
+      <a href="program.html?p=dcc" class="prog-card">
+        <div><div class="tag">CORE · 8주</div><h4>DCC · 데일카네기 코스</h4></div>
+        <p>110년 넘는 역사, 전 세계 900만 명의 삶을 바꾼 데일카네기 대표 프로그램.</p>
+      </a>
+      <a href="program.html?p=sales" class="prog-card">
+        <div><div class="tag">SALES</div><h4>DCS · 세일즈 트레이닝</h4></div>
+        <p>신뢰를 파는 세일즈, 관계로 성과를 만드는 영업 조직의 기술.</p>
+      </a>
+      <a href="program.html?p=tla" class="prog-card">
+        <div><div class="tag">TLA · 6주</div><h4>리더십 어드밴티지</h4></div>
+        <p>AI 시대, 성과를 만드는 리더의 결정적 차이.</p>
+      </a>
+      <a href="program.html?p=ltm" class="prog-card">
+        <div><div class="tag">LTM · 3주</div><h4>매니저·팀장 리더십</h4></div>
+        <p>처음 팀을 맡은 순간부터, 조직을 움직이는 관리자의 기본기.</p>
+      </a>
+      <a href="program.html?p=hip" class="prog-card">
+        <div><div class="tag">HIP</div><h4>고성과 프레젠테이션</h4></div>
+        <p>한 번의 발표로 신뢰를 얻는 법, 설득력 있는 스피치의 기술.</p>
+      </a>
+      <a href="program.html?p=dylp" class="prog-card">
+        <div><div class="tag">DYLP</div><h4>개인 공개 리더십 과정</h4></div>
+        <p>소속·직급에 관계없이, 누구나 참여할 수 있는 개인 리더십 공개 과정.</p>
+      </a>
+      <a href="program.html?p=newleader" class="prog-card">
+        <div><div class="tag">NEW LEADER · 2일</div><h4>신임 리더 핵심 스킬</h4></div>
+        <p>리더가 처음인 사람에게 꼭 필요한 리더십의 첫걸음.</p>
+      </a>
+      <a href="program.html?p=campus" class="prog-card">
+        <div><div class="tag">CAMPUS</div><h4>대학생 과정</h4></div>
+        <p>사회 진출 전에 갖춰야 할 자기확신과 커뮤니케이션의 힘.</p>
+      </a>
+      <a href="program.html?p=youth" class="prog-card">
+        <div><div class="tag">YOUTH</div><h4>청소년 과정</h4></div>
+        <p>자신감과 대인관계 능력을 키우는 다음 세대 리더십 트레이닝.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <div class="wrap">
+    <h2>어떤 과정이 맞을지 고민되신다면 상담받아보세요</h2>
+    <a href="contact.html" class="btn">상담 신청하기</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">데일카네기코리아는 바인그룹이 운영합니다. © 2026 데일카네기코리아. All rights reserved.</div>
+</footer>
+
+<a href="tel:010-5551-6230" class="float-cta">
+  <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+  전화상담
+</a>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상담 신청 | 데일카네기코리아 CEO과정</title>
+<meta name="description" content="데일카네기코리아 CEO과정 상담 신청. 전화 010-5551-6230 또는 온라인 신청서로 지역별 일정과 교육비를 안내받으세요.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23bd1622'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='56' font-weight='800' fill='white' text-anchor='middle'%3EDC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700;900&family=Noto+Sans+KR:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#111011; --black-2:#1c1a1b; --cream:#f6f1e7; --white:#ffffff;
+    --red:#bd1622; --red-dark:#8f0f19; --gray:#6b6660; --gray-light:#9a948b; --line: rgba(17,16,17,0.12);
+    --serif: 'Noto Serif KR', serif; --sans: 'Noto Sans KR', sans-serif; --maxw: 1160px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family: var(--sans); color: var(--black); background: var(--cream); -webkit-font-smoothing:antialiased; overflow-x:hidden;}
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .eyebrow{font-size:13px; letter-spacing:.18em; font-weight:700; text-transform:uppercase; color:var(--red); display:inline-flex; align-items:center; gap:8px; margin-bottom:14px;}
+  .eyebrow::before{content:''; width:20px; height:2px; background:var(--red); display:inline-block;}
+  h1,h2,h3{font-family:var(--serif); font-weight:800; line-height:1.25;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:16px 30px; font-weight:700; font-size:15px; border-radius:2px; cursor:pointer; border:1px solid transparent; letter-spacing:.02em;}
+  .btn-red{background:var(--red); color:#fff;}
+  .btn-red:hover{background:var(--red-dark);}
+
+  header{position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(17,16,17,.94); backdrop-filter:blur(6px); border-bottom:1px solid rgba(255,255,255,.08);}
+  .nav{display:flex; align-items:center; justify-content:space-between; height:76px; max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  .logo-img{height:44px; width:auto; filter:invert(1); mix-blend-mode:screen; display:block;}
+  nav.menu{display:flex; align-items:center; gap:30px;}
+  nav.menu a{color:#e9e5dc; font-size:14.5px; font-weight:500; opacity:.88;}
+  nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
+  .nav-right{display:flex; align-items:center; gap:16px;}
+  .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+
+  .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
+  .breadcrumb a{color:var(--gray-light);}
+  .breadcrumb a:hover{color:#fff;}
+
+  .contact-section{background:var(--black); color:#fff; position:relative; overflow:hidden; padding:170px 0 88px;}
+  .contact-section::before{content:''; position:absolute; inset:0; opacity:.5; background: radial-gradient(circle at 15% 30%, rgba(189,22,34,.28), transparent 45%);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:70px; position:relative;}
+  .contact-info h1{color:#fff; font-size:clamp(28px,4vw,40px); margin-bottom:20px;}
+  .contact-info p{color:var(--gray-light); font-size:15.5px; line-height:1.8; margin-bottom:36px; max-width:440px;}
+  .tel-big{display:flex; align-items:center; gap:16px; padding:22px 26px; background:var(--red); margin-bottom:20px; max-width:420px;}
+  .tel-big svg{width:26px; height:26px; fill:#fff; flex:0 0 auto;}
+  .tel-big .t1{font-size:12px; color:rgba(255,255,255,.8); letter-spacing:.08em;}
+  .tel-big .t2{font-family:var(--serif); font-size:26px; font-weight:800; color:#fff;}
+  .director-line{font-size:14px; color:var(--gray-light); margin-top:18px;}
+  .director-line b{color:#fff;}
+
+  form.consult{display:flex; flex-direction:column; gap:14px; position:relative;}
+  form.consult input, form.consult select{width:100%; padding:15px 16px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.18); color:#fff; font-family:var(--sans); font-size:14.5px; border-radius:2px;}
+  form.consult ::placeholder{color:var(--gray-light);}
+  form.consult select{color:var(--gray-light);}
+  form.consult select option{color:#000;}
+  .row2{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  form.consult .btn-red{margin-top:8px; width:100%;}
+  .gform-thanks{display:none; margin-top:14px; padding:14px 16px; background:rgba(189,22,34,.12); border:1px solid var(--red); color:#fff; font-size:13.5px; text-align:center;}
+  .gform-thanks.show{display:block;}
+  .gform.submitted > *:not(.gform-thanks){display:none;}
+
+  footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
+
+  @media (max-width:920px){
+    nav.menu{display:none;} .nav-tel{display:none;}
+    .contact-grid{grid-template-columns:1fr; gap:44px;}
+  }
+  @media (max-width:560px){ .row2{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <img src="logo-inline.jpg" alt="Dale Carnegie" class="logo-img">
+    <nav class="menu">
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="network.html">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
+      <a href="contact.html" class="btn btn-red">상담신청</a>
+    </div>
+  </div>
+</header>
+
+<section class="contact-section">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html" style="color:var(--gray-light);">홈</a> / 상담신청</div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="eyebrow">상담 신청</div>
+        <h1>지금, 상담을 신청하세요</h1>
+        <p>전국 어느 지역이든, 전화 한 통으로 CEO과정 일정과 교육비를 바로 안내받으실 수 있습니다.</p>
+
+        <a class="tel-big" href="tel:010-5551-6230">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+          <div><div class="t1">전화 상담 문의</div><div class="t2">010-5551-6230</div></div>
+        </a>
+        <div class="director-line"><b>데일카네기코리아</b> · 카네기리더십코스 팀장 코치</div>
+        <div class="director-line">바인그룹이 운영하는 데일카네기코리아 공식 사이트</div>
+      </div>
+
+      <form class="consult gform" data-thankyou="thankyou-main"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSceSkqIFzOXxOA5Q6wa71BYCRmSL1vOBbxgphbcDFGCWovrnA/formResponse"
+            method="POST" target="hidden_iframe">
+        <div class="row2">
+          <input type="text" name="entry.2005620554" placeholder="이름" required>
+          <input type="text" name="entry.1045781291" placeholder="회사명" required>
+        </div>
+        <div class="row2">
+          <input type="tel" name="entry.1065046570" placeholder="연락처" required>
+          <input type="text" name="entry.1166974658" placeholder="직무 / 직함">
+        </div>
+        <div class="row2">
+          <select name="entry.839337160" required>
+            <option value="" disabled selected>희망 지역 선택</option>
+            <option>서울</option>
+            <option>경기(수원·시흥·고양 등)</option>
+            <option>인천</option>
+            <option>대전·충청</option>
+            <option>대구·경북</option>
+            <option>부산·울산·경남</option>
+            <option>광주·전라</option>
+            <option>기타 지역</option>
+          </select>
+          <select name="entry.191059962" required>
+            <option value="" disabled selected>관심 과정 선택</option>
+            <option>CEO과정</option>
+            <option>DCC과정</option>
+            <option>세일즈</option>
+            <option>팀장리더십</option>
+            <option>기타 문의</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-red">상담 신청서 보내기</button>
+        <p id="thankyou-main" class="gform-thanks">감사합니다! 신청이 접수되었습니다. 확인 후 순차적으로 연락드리겠습니다.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">데일카네기코리아는 바인그룹이 운영합니다. © 2026 데일카네기코리아. All rights reserved.</div>
+</footer>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+<script>
+  document.querySelectorAll('form.gform').forEach(function(f){
+    f.addEventListener('submit', function(){
+      setTimeout(function(){
+        f.classList.add('submitted');
+        var msg = document.getElementById(f.getAttribute('data-thankyou'));
+        if(msg) msg.classList.add('show');
+      }, 400);
+    });
+  });
+</script>
+
+</body>
+</html>
