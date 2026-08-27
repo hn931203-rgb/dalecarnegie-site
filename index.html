@@ -258,6 +258,13 @@
   .book-card h4{font-family:var(--serif); color:#fff; font-size:17px; margin-bottom:10px; line-height:1.4;}
   .book-card p{font-size:13px; color:var(--gray-light); line-height:1.7;}
 
+  /* ===== ALUMNI PHOTOS ===== */
+  .alumni-photos{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:44px;}
+  .alumni-photos figure{margin:0; overflow:hidden; background:var(--black); position:relative;}
+  .alumni-photos img{width:100%; height:220px; object-fit:cover; display:block; filter:grayscale(.15); transition:transform .35s ease, filter .35s ease;}
+  .alumni-photos figure:hover img{transform:scale(1.06); filter:grayscale(0);}
+  .alumni-photos figcaption{position:absolute; left:0; right:0; bottom:0; padding:10px 12px; font-size:11.5px; color:#fff; background:linear-gradient(0deg, rgba(0,0,0,.75), transparent);}
+
   /* ===== NETWORK / ALUMNI ===== */
   .network-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); margin-top:52px; border:1px solid var(--line);}
   .network-card{background:var(--cream); padding:40px 32px;}
@@ -381,6 +388,7 @@
     .nav-tel{display:none;}
     .hamburger{display:flex;}
     .why-grid, .prog-grid, .network-grid{grid-template-columns:1fr;}
+    .alumni-photos{grid-template-columns:repeat(2,1fr);}
     .persona-grid{grid-template-columns:repeat(2,1fr);}
     .book-grid{grid-template-columns:repeat(2,1fr);}
     .schedule-grid{grid-template-columns:1fr 1fr;}
@@ -694,6 +702,13 @@
         <h3>경영자 골프모임</h3>
         <p>필드 위에서 이어지는 경영자 간의 친목과 신뢰. 데일카네기 CEO과정 수료생 골프 네트워크입니다.</p>
       </div>
+    </div>
+
+    <div class="alumni-photos">
+      <figure><img src="동문회4.jpg" alt="2025 파주카네기 총동문회 하계 야유회"><figcaption>2025 파주카네기 총동문회 하계 야유회</figcaption></figure>
+      <figure><img src="동문회2.jpg" alt="한국카네기 CEO클럽 동문 만찬"><figcaption>한국카네기 CEO클럽 동문 만찬</figcaption></figure>
+      <figure><img src="동문회.jpg" alt="데일카네기 CEO과정 파주지역과정 25기"><figcaption>CEO과정 파주지역과정 25기</figcaption></figure>
+      <figure><img src="동문회3.jpg" alt="한국카네기 CEO클럽 파주 총동문회 회장 이·취임식"><figcaption>파주 총동문회 16·17대 회장 이·취임식</figcaption></figure>
     </div>
   </div>
 </section>
