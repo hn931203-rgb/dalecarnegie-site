@@ -70,6 +70,20 @@
   .review-card p{font-size:14px; color:var(--gray); line-height:1.85; margin-bottom:12px;}
   .review-card .rv-link{display:inline-block; margin-top:14px; font-size:13.5px; font-weight:700; color:var(--red); border-bottom:1px solid var(--red);}
 
+  .news-grid{display:grid; grid-template-columns:1fr 1.2fr; gap:24px; margin-top:20px;}
+  .news-card{background:var(--white); border:1px solid var(--line); padding:30px 28px;}
+  .news-card .nw-badge{display:inline-block; font-size:11px; font-weight:800; letter-spacing:.08em; color:#fff; padding:4px 10px; margin-bottom:14px;}
+  .nw-badge.urgent{background:var(--red);}
+  .nw-badge.story{background:var(--black);}
+  .news-card h3{font-size:18px; margin-bottom:12px;}
+  .news-card p{font-size:14px; color:var(--gray); line-height:1.8; margin-bottom:10px;}
+  .news-card .nw-dates{list-style:none; margin:14px 0; font-size:13.5px;}
+  .news-card .nw-dates li{padding:7px 0; border-top:1px solid var(--line); display:flex; justify-content:space-between;}
+  .news-card .nw-dates li b{color:var(--red);}
+  .news-photos{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:14px 0;}
+  .news-photos img{width:100%; height:130px; object-fit:cover; display:block;}
+  .news-card .rv-link{display:inline-block; margin-top:8px; font-size:13.5px; font-weight:700; color:var(--red); border-bottom:1px solid var(--red);}
+
   .cta-strip{background:var(--red); color:#fff; padding:56px 0; text-align:center;}
   .cta-strip h2{color:#fff; font-size:clamp(22px,3vw,30px); margin-bottom:18px;}
   .cta-strip .btn{background:#fff; color:var(--red); font-weight:800;}
@@ -81,7 +95,7 @@
   @media (max-width:920px){
     nav.menu{display:none;} .nav-tel{display:none;}
     .voice-grid{grid-template-columns:1fr;}
-    .book-grid, .review-grid{grid-template-columns:1fr;}
+    .book-grid, .review-grid, .news-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -118,6 +132,33 @@
   <div class="wrap">
     <p class="section-sub">국내외 유수 기업의 경영자와 리더들이 데일카네기의 원칙을 통해 조직과 관계의 변화를 경험했습니다.</p>
 
+    <div class="eyebrow" style="margin-top:8px;">최신 소식</div>
+    <div class="news-grid">
+      <div class="news-card">
+        <span class="nw-badge urgent">마감임박</span>
+        <h3>CEO과정 파주 27기, 9월 2일 개강</h3>
+        <p>이번 하반기 데일카네기 CEO과정, 파주 지역이 가장 먼저 문을 엽니다. 12주간 매주 한 번, 발표·롤플레잉·피드백 중심의 실습으로 진행되는 데일카네기 정통 리더십 프로그램입니다.</p>
+        <ul class="nw-dates">
+          <li>파주 27기 <b>9월 2일(수) 개강</b></li>
+          <li>포항 28기 <b>9월 3일(목) 개강</b></li>
+          <li>화성·오산 42기 <b>9월 7일(월) 개강</b></li>
+        </ul>
+        <a href="schedule.html" class="rv-link">전국 개강일정 전체 보기 →</a>
+      </div>
+      <div class="news-card">
+        <span class="nw-badge story">현장 후기</span>
+        <h3>수료로 끝나지 않습니다 — 총동문회 현장</h3>
+        <p>데일카네기 CEO과정의 인연은 12주 수료로 마무리되지 않습니다. 파주카네기 총동문회는 수료 이후에도 정기적인 모임을 이어가며, 지역과 업종을 넘나드는 경영자 네트워크를 만들어가고 있습니다.</p>
+        <div class="news-photos">
+          <img src="동문회4.jpg" alt="2025 파주카네기 총동문회 하계 야유회">
+          <img src="동문회3.jpg" alt="파주 총동문회 16·17대 회장 이·취임식">
+        </div>
+        <p>지난 여름 "2025 파주카네기 총동문회 하계 야유회"가 열려 기수를 넘나든 동문들이 함께했고, 이어 "파주 총동문회 16·17대 회장 이·취임식"으로 새로운 리더십 체제를 다졌습니다. 과정을 함께 수료한 인연이 실제 비즈니스 네트워크로 이어지는 것 — 데일카네기 CEO과정이 단순한 교육을 넘어서는 이유입니다.</p>
+        <a href="network.html" class="rv-link">동문 네트워크 자세히 보기 →</a>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-top:52px;">전 세계 리더들의 공통점</div>
     <div class="voice-grid">
       <div class="voice-card"><div class="mark">"</div><p>포춘 500대 기업 중 400개 이상이 데일카네기 트레이닝을 도입해 조직의 리더십과 커뮤니케이션 역량을 강화해왔습니다.</p><div class="who">데일카네기 글로벌 도입 현황</div></div>
       <div class="voice-card"><div class="mark">"</div><p>1936년 초판된 「인간관계론」은 전 세계에서 1억 부 이상 판매되며 자기계발 분야의 고전으로 자리잡았습니다.</p><div class="who">데일카네기 「인간관계론」</div></div>
