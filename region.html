@@ -196,14 +196,14 @@
   var regionName = REGION_NAMES[slug] || '전국';
   var rows = SCHEDULE.filter(function(r){ return r.slug === slug; });
 
-  document.getElementById('pageTitle').textContent = regionName + ' 카네기 CEO과정 ' + (rows[0] ? rows[0].gisu : '') + ' | 데일카네기코리아 최고경영자과정';
+  document.getElementById('pageTitle').textContent = regionName + ' 카네기 CEO과정 ' + (rows[0] ? rows[0].gisu : '') + ' | ' + regionName + ' 사업가모임·대표모임 | 데일카네기코리아';
   var descDetail = rows.length
-    ? (regionName + ' 데일카네기 ' + rows[0].course + ' ' + rows[0].gisu + ' — ' + rows[0].day + '요일반, ' + rows[0].dur + ' 과정, ' + rows[0].start + ' 개강 · ' + rows[0].end + ' 수료, 수강료 ' + rows[0].price + '. 경영진교육·팀장리더십·리더십강의 상담 접수중. 상담문의 010-5551-6230')
-    : (regionName + ' 데일카네기 CEO과정 · 경영진교육 · 리더십강의. 2026 하반기 개강 일정과 수강료를 확인하세요. 상담문의 010-5551-6230');
+    ? (regionName + ' 사업가모임·' + regionName + ' 대표모임으로도 이어지는 데일카네기 ' + rows[0].course + ' ' + rows[0].gisu + ' — ' + rows[0].day + '요일반, ' + rows[0].dur + ' 과정, ' + rows[0].start + ' 개강 · ' + rows[0].end + ' 수료, 수강료 ' + rows[0].price + '. 경영진교육·팀장리더십·리더십강의 상담 접수중. 상담문의 010-5551-6230')
+    : (regionName + ' 데일카네기 CEO과정 · ' + regionName + ' 사업가모임 · ' + regionName + ' 대표모임 · 경영진교육 · 리더십강의. 2026 하반기 개강 일정과 수강료를 확인하세요. 상담문의 010-5551-6230');
   document.getElementById('pageDesc').setAttribute('content', descDetail);
   document.getElementById('ogTitle').setAttribute('content', regionName + ' 카네기 CEO과정 | 데일카네기코리아');
   document.getElementById('crumbName').textContent = regionName;
-  document.getElementById('pTitle').textContent = regionName + ' 카네기 CEO과정';
+  document.getElementById('pTitle').textContent = regionName + ' 카네기 CEO과정 · ' + regionName + ' 사업가모임';
   document.getElementById('pIntro').textContent = regionName + ' 지역 대표·CEO·자영업자를 위한 데일카네기 리더십강의입니다. 스타트업, 제조업, 유통업, 건설업, 부동산업, 프랜차이즈, 무역업, 금융업, 증권가, 의료업(병원) 등 업종을 가리지 않고, 창업 1세대부터 2세 경영승계를 준비하는 후계자까지 함께하고 있습니다. 직원관리와 소통·대화법의 원칙을 익히는 것은 리더십 교육의 시작일 뿐입니다. 실제로 많은 분들이 ' + regionName + ' 대표자모임·CEO모임·총동문회·경영자 골프회에서 만난 인맥을 통해 새로운 거래처와 사업 파트너를 발굴하며 비즈니스를 확장하고 계십니다.';
   document.getElementById('scheduleTitle').textContent = regionName + ' 개강 일정';
   document.getElementById('whyTitle').textContent = regionName + ' 경영자들이 데일카네기를 선택하는 이유';
