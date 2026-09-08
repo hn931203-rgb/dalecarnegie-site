@@ -52,6 +52,11 @@
   nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
   .nav-right{display:flex; align-items:center; gap:16px;}
   .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+  .hamburger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:6px;}
+  .hamburger span{width:22px; height:2px; background:#fff; display:block;}
+  .mobile-menu{display:none; position:fixed; top:76px; left:0; right:0; bottom:0; background:var(--black); z-index:99; padding:36px 24px; flex-direction:column; gap:26px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#fff; font-size:20px; font-family:var(--serif); font-weight:700;}
 
   .page-hero{background:linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%); color:#fff; padding:190px 0 60px;}
   .page-hero .wrap{max-width:800px;}
@@ -79,7 +84,7 @@
   .float-cta{position:fixed; right:22px; bottom:22px; z-index:90; background:var(--red); color:#fff; padding:14px 20px; border-radius:2px; display:flex; align-items:center; gap:8px; font-weight:700; font-size:14px; box-shadow:0 8px 24px rgba(0,0,0,.35);}
   .float-cta svg{width:16px; height:16px; fill:#fff;}
 
-  @media (max-width:920px){ nav.menu{display:none;} .nav-tel{display:none;} }
+  @media (max-width:920px){ nav.menu{display:none;} .nav-tel{display:none;} .hamburger{display:flex;} }
 </style>
 </head>
 <body>
@@ -101,8 +106,20 @@
         <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
         <a href="contact.html" class="btn btn-red">상담신청</a>
       </div>
+      <button class="hamburger" onclick="this.closest('header').querySelector('.mobile-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+  <div class="mobile-menu">
+        <a href="about.html">소개</a>
+        <a href="ceo-course.html">CEO과정</a>
+        <a href="programs.html">프로그램</a>
+        <a href="schedule.html">개강일정</a>
+        <a href="network.html">동문네트워크</a>
+        <a href="reviews.html">후기</a>
+        <a href="faq.html" class="current">FAQ</a>
+      </div>
 </header>
 
 <section class="page-hero">

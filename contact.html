@@ -38,6 +38,11 @@
   nav.menu a:hover, nav.menu a.current{opacity:1; color:var(--red);}
   .nav-right{display:flex; align-items:center; gap:16px;}
   .nav-tel{color:#fff; font-weight:700; font-size:14.5px;}
+  .hamburger{display:none; flex-direction:column; gap:5px; cursor:pointer; background:none; border:none; padding:6px;}
+  .hamburger span{width:22px; height:2px; background:#fff; display:block;}
+  .mobile-menu{display:none; position:fixed; top:76px; left:0; right:0; bottom:0; background:var(--black); z-index:99; padding:36px 24px; flex-direction:column; gap:26px;}
+  .mobile-menu.open{display:flex;}
+  .mobile-menu a{color:#fff; font-size:20px; font-family:var(--serif); font-weight:700;}
 
   .breadcrumb{font-size:13px; color:var(--gray-light); margin-bottom:18px;}
   .breadcrumb a{color:var(--gray-light);}
@@ -69,7 +74,7 @@
   footer{background:var(--black-2); color:var(--gray-light); padding:40px 0; border-top:1px solid rgba(255,255,255,.08); font-size:12px; text-align:center;}
 
   @media (max-width:920px){
-    nav.menu{display:none;} .nav-tel{display:none;}
+    nav.menu{display:none;} .nav-tel{display:none;} .hamburger{display:flex;}
     .contact-grid{grid-template-columns:1fr; gap:44px;}
   }
   @media (max-width:560px){ .row2{grid-template-columns:1fr;} }
@@ -92,8 +97,20 @@
     <div class="nav-right">
       <a class="nav-tel" href="tel:010-5551-6230">010-5551-6230</a>
       <a href="contact.html" class="btn btn-red">상담신청</a>
+      <button class="hamburger" onclick="this.closest('header').querySelector('.mobile-menu').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
+  <div class="mobile-menu">
+      <a href="about.html">소개</a>
+      <a href="ceo-course.html">CEO과정</a>
+      <a href="programs.html">프로그램</a>
+      <a href="schedule.html">개강일정</a>
+      <a href="network.html">동문네트워크</a>
+      <a href="reviews.html">후기</a>
+      <a href="faq.html">FAQ</a>
+    </div>
 </header>
 
 <section class="contact-section">
