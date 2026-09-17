@@ -55,7 +55,7 @@
   .breadcrumb a{color:var(--gray-light);}
   .breadcrumb a:hover{color:#fff;}
 
-  .network-grid{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1px; background:var(--line); margin-top:20px; border:1px solid var(--line);}
+  .network-grid{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:1px; background:var(--line); margin-top:20px; border:1px solid var(--line);}
   .network-card{background:var(--white); padding:30px 24px;}
   .network-card .icon{width:38px; height:38px; margin-bottom:14px;}
   .network-card .icon svg{width:100%; height:100%; stroke:var(--red); fill:none; stroke-width:1.4;}
@@ -78,8 +78,11 @@
 
   @media (max-width:920px){
     nav.menu{display:none;} .nav-tel{display:none;} .hamburger{display:flex;}
-    .network-grid{grid-template-columns:1fr;}
+    .network-grid{grid-template-columns:repeat(2, minmax(0,1fr));}
     .alumni-photos{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:520px){
+    .network-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
@@ -126,7 +129,7 @@
 
 <section class="section">
   <div class="wrap">
-    <p class="section-sub">데일카네기 CEO과정의 인연은 수료로 끝나지 않습니다. 리더십 훈련은 시작일 뿐, 수료생들은 지역별·업종별 총동문회, 비즈니스모임, 조찬모임, 골프모임을 통해 관계를 이어가며 실제 거래처와 사업 파트너를 만나 비즈니스를 확장하고 있습니다.</p>
+    <p class="section-sub">데일카네기 CEO과정의 인연은 수료로 끝나지 않습니다. 리더십 훈련은 시작일 뿐, 수료생들은 지역별·업종별 총동문회, 비즈니스모임, 조찬모임, 골프모임, 독서모임을 통해 관계를 이어가며 실제 거래처와 사업 파트너를 만나 비즈니스를 확장하고 있습니다.</p>
 
     <div class="network-grid">
       <div class="network-card">
@@ -143,6 +146,11 @@
         <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.5"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
         <h3>경영자 골프모임</h3>
         <p>필드 위에서 이어지는 경영자 간의 친목과 신뢰. 데일카네기 CEO과정 수료생 골프 네트워크입니다.</p>
+      </div>
+      <div class="network-card">
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <h3>지역별 독서모임</h3>
+        <p>「인간관계론」·「자기관리론」 등 카네기 원칙을 함께 읽고 토론하는 지역별 독서모임. CEO과정 수료생들이 배운 원칙을 계속 되새기는 자리입니다. <a href="reviews.html" style="color:var(--red); font-weight:700;">도서 인사이트 보기 →</a></p>
       </div>
     </div>
 
