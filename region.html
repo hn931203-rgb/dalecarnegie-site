@@ -212,8 +212,8 @@
 
   document.getElementById('pageTitle').textContent = regionName + ' 카네기 CEO과정 ' + (rows[0] ? rows[0].gisu : '') + ' | ' + regionName + ' 사업가모임·대표모임 | 데일카네기코리아';
   var descDetail = rows.length
-    ? (regionName + ' 사업가모임·' + regionName + ' 대표모임으로도 이어지는 데일카네기 ' + rows[0].course + ' ' + rows[0].gisu + ' — ' + rows[0].day + '요일반, ' + rows[0].dur + ' 과정, ' + rows[0].start + ' 개강 · ' + rows[0].end + ' 수료, 수강료 ' + rows[0].price + '. 경영진교육·팀장리더십·리더십강의 상담 접수중. 상담문의 010-5551-6230')
-    : (regionName + ' 데일카네기 CEO과정 · ' + regionName + ' 사업가모임 · ' + regionName + ' 대표모임 · 경영진교육 · 리더십강의. 2026 하반기 개강 일정과 수강료를 확인하세요. 상담문의 010-5551-6230');
+    ? (regionName + ' 대표·CEO를 위한 데일카네기 ' + rows[0].course + ' ' + rows[0].gisu + ' — ' + rows[0].day + '요일반, ' + rows[0].dur + ' 과정, ' + rows[0].start + ' 개강. ' + regionName + ' 사업가모임·대표모임으로 이어지는 경영자 네트워크까지. 정확한 수강료·잔여좌석은 상담 시 안내해 드립니다. 상담문의 010-5551-6230')
+    : (regionName + ' 데일카네기 CEO과정 · ' + regionName + ' 사업가모임 · ' + regionName + ' 대표모임 · 경영진교육 · 리더십강의. 2026 하반기 개강 일정을 확인하세요. 정확한 수강료는 상담 시 안내해 드립니다. 상담문의 010-5551-6230');
   document.getElementById('pageDesc').setAttribute('content', descDetail);
   document.getElementById('ogTitle').setAttribute('content', regionName + ' 카네기 CEO과정 | 데일카네기코리아');
   document.getElementById('crumbName').textContent = regionName;

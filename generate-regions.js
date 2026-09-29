@@ -48,7 +48,7 @@ function page(slug) {
   const first = rows[0];
 
   const title = `${regionName} 카네기 CEO과정 ${first.gisu} | ${regionName} 사업가모임·대표모임 | 데일카네기코리아`;
-  const desc = `${regionName} 사업가모임·${regionName} 대표모임으로도 이어지는 데일카네기 ${first.course} ${first.gisu} — ${first.day}요일반, ${first.dur} 과정, ${first.start} 개강 · ${first.end} 수료, 수강료 ${first.price}. 경영진교육·팀장리더십·리더십강의 상담 접수중. 상담문의 010-5551-6230`;
+  const desc = `${regionName} 대표·CEO를 위한 데일카네기 ${first.course} ${first.gisu} — ${first.day}요일반, ${first.dur} 과정, ${first.start} 개강. ${regionName} 사업가모임·대표모임으로 이어지는 경영자 네트워크까지. 정확한 수강료·잔여좌석은 상담 시 안내해 드립니다. 상담문의 010-5551-6230`;
   const ogTitle = `${regionName} 카네기 CEO과정 | 데일카네기코리아`;
   const pTitle = `${regionName} 카네기 CEO과정 · ${regionName} 사업가모임`;
   const pIntro = `${regionName} 지역 대표·CEO·자영업자를 위한 데일카네기 리더십강의입니다. 스타트업, 제조업, 유통업, 건설업, 부동산업, 프랜차이즈, 무역업, 금융업, 증권가, 의료업(병원) 등 업종을 가리지 않고, 창업 1세대부터 2세 경영승계를 준비하는 후계자까지 함께하고 있습니다. 직원관리와 소통·대화법의 원칙을 익히는 것은 리더십 교육의 시작일 뿐입니다. 실제로 많은 분들이 ${regionName} 대표자모임·CEO모임·총동문회·경영자 골프회에서 만난 인맥을 통해 새로운 거래처와 사업 파트너를 발굴하며 비즈니스를 확장하고 계십니다.`;
@@ -65,7 +65,7 @@ function page(slug) {
   const courseSchema = rows.map(r => ({
     "@type": "Course",
     "name": `${regionName} ${r.course}`,
-    "description": `${regionName} 데일카네기 ${r.course} ${r.gisu} — ${r.day}요일반, ${r.dur}, ${r.start} 개강, 수강료 ${r.price}`,
+    "description": `${regionName} 데일카네기 ${r.course} ${r.gisu} — ${r.day}요일반, ${r.dur}, ${r.start} 개강. 수강료는 상담 시 안내`,
     "provider": { "@type": "Organization", "name": "데일카네기코리아", "sameAs": "https://carnegie-ceo.co.kr/" },
     "areaServed": regionName
   }));
