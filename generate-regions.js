@@ -48,11 +48,11 @@ function page(slug) {
   const first = rows[0];
 
   const title = `${regionName} 카네기 CEO과정 ${first.gisu} | ${regionName} 사업가모임·대표모임 | 데일카네기코리아`;
-  const desc = `${regionName} 대표·CEO를 위한 데일카네기 ${first.course} ${first.gisu} — ${first.day}요일반, ${first.dur} 과정, ${first.start} 개강. ${regionName} 사업가모임·대표모임으로 이어지는 경영자 네트워크까지. 정확한 수강료·잔여좌석은 상담 시 안내해 드립니다. 상담문의 010-5551-6230`;
+  const desc = `${regionName} 대표·CEO를 위한 데일카네기 ${first.course} ${first.gisu} — ${first.day}요일반, ${first.dur} 과정, ${first.start} 개강. ${regionName} 사업가모임·경영자모임·대표모임으로 이어지는 회장단·이사진·임원급 네트워크까지. 정확한 수강료·잔여좌석은 상담 시 안내해 드립니다. 상담문의 010-5551-6230`;
   const ogTitle = `${regionName} 카네기 CEO과정 | 데일카네기코리아`;
-  const pTitle = `${regionName} 카네기 CEO과정 · ${regionName} 사업가모임`;
-  const pIntro = `${regionName} 지역 대표·CEO·자영업자를 위한 데일카네기 리더십강의입니다. 스타트업, 제조업, 유통업, 건설업, 부동산업, 프랜차이즈, 무역업, 금융업, 증권가, 의료업(병원) 등 업종을 가리지 않고, 창업 1세대부터 2세 경영승계를 준비하는 후계자까지 함께하고 있습니다. 직원관리와 소통·대화법의 원칙을 익히는 것은 리더십 교육의 시작일 뿐입니다. 실제로 많은 분들이 ${regionName} 대표자모임·CEO모임·총동문회·경영자 골프회에서 만난 인맥을 통해 새로운 거래처와 사업 파트너를 발굴하며 비즈니스를 확장하고 계십니다.`;
-  const alumniHtml = `수료는 끝이 아니라 시작입니다. ${regionName} 카네기 총동문회는 ${regionName} 사업가모임이자 ${regionName} 대표모임으로, 지역·업종을 넘나드는 비즈니스모임, 경영자 네트워크, 조찬모임, 골프모임으로 관계를 이어가실 수 있습니다. <a href="../network.html" style="color:var(--red); font-weight:700;">동문 네트워크 자세히 보기 →</a>`;
+  const pTitle = `${regionName} 카네기 CEO과정 · ${regionName} 경영자모임`;
+  const pIntro = `${regionName} 지역 대표·CEO·자영업자를 위한 데일카네기 리더십강의입니다. 스타트업, 제조업, 유통업, 건설업, 부동산업, 프랜차이즈, 무역업, 금융업, 증권가, 의료업(병원) 등 업종을 가리지 않고, 창업 1세대부터 2세 경영승계를 준비하는 후계자까지 함께하고 있습니다. 직원관리와 소통·대화법의 원칙을 익히는 것은 리더십 교육의 시작일 뿐입니다. 실제로 많은 분들이 ${regionName} 대표자모임·CEO모임·경영자모임·경영인모임·회장모임·부회장모임·이사진모임·임원모임·총동문회·경영자 골프회에서 만난 인맥을 통해 새로운 거래처와 사업 파트너를 발굴하며 비즈니스를 확장하고 계십니다.`;
+  const alumniHtml = `수료는 끝이 아니라 시작입니다. ${regionName} 카네기 총동문회는 ${regionName} 사업가모임이자 ${regionName} 대표모임·경영자모임으로, 회장·부회장·이사진을 선출해 운영하는 경영진모임 성격의 조직입니다. 지역·업종을 넘나드는 비즈니스모임, 회장단·임원모임, 조찬모임, 골프모임으로 관계를 이어가실 수 있습니다. <a href="../network.html" style="color:var(--red); font-weight:700;">동문 네트워크 자세히 보기 →</a>`;
 
   const tableRows = rows.map(r =>
     `          <tr><td class="course">${r.course}</td><td class="gisu">${r.gisu}</td><td>${r.start}</td><td>${r.end}</td><td>${r.day}</td><td>${r.dur}</td><td>${r.price}</td><td><a href="../contact.html">신청 →</a></td></tr>`
