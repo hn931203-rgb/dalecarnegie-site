@@ -87,6 +87,11 @@
   table.sched-table td.gisu{color:var(--red); font-weight:700;}
   table.sched-table td.apply-cell a{color:var(--red); font-weight:700; border-bottom:1px solid var(--red);}
   .note-box{margin-top:22px; padding:16px 20px; border:1px dashed var(--gray-light); font-size:13px; color:var(--gray); background:var(--cream-2);}
+  .status-badge{display:inline-block; padding:4px 10px; font-size:12px; font-weight:700; border-radius:2px; white-space:nowrap;}
+  .status-badge.upcoming{background:rgba(17,16,17,.08); color:var(--black);}
+  .status-badge.closing{background:rgba(189,22,34,.12); color:var(--red);}
+  .status-badge.ongoing{background:rgba(29,122,60,.12); color:#1d7a3c;}
+  .status-badge.done{background:rgba(17,16,17,.06); color:var(--gray-light);}
 
   .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); margin-top:20px; border:1px solid var(--line);}
   .why-card{background:var(--white); padding:32px 26px;}
@@ -152,9 +157,9 @@
     <h2 class="section-title">파주 개강 일정</h2>
     <div class="table-scroll">
       <table class="sched-table">
-        <thead><tr><th>과정</th><th>기수</th><th>개강</th><th>종강</th><th>요일</th><th>기간</th><th>수강료</th><th></th></tr></thead>
+        <thead><tr><th>과정</th><th>기수</th><th>개강</th><th>종강</th><th>요일</th><th>기간</th><th>수강료</th><th>진행상황</th><th></th></tr></thead>
         <tbody>
-          <tr><td class="course">CEO과정</td><td class="gisu">27기</td><td>09.02</td><td>11.18</td><td>수</td><td>12주</td><td>2,900,000원</td><td><a href="../contact.html">신청 →</a></td></tr>
+          <tr><td class="course">CEO과정</td><td class="gisu">27기</td><td>09.02</td><td>11.18</td><td>수</td><td>12주</td><td>2,900,000원</td><td class="status" data-start="09.02" data-end="11.18"></td><td><a href="../contact.html">신청 →</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -204,6 +209,14 @@
   </div>
 </section>
 
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="eyebrow">수료생 이야기</div>
+    <h2 class="section-title">파주 수료생들이 전하는 변화</h2>
+    <p class="section-sub region-review">파주 CEO과정 수료생들은 대부분 처음에는 많은 사람들 앞에서 말하는 것에 부담을 느꼈다고 말합니다. 12주 동안 매주 발표와 피드백을 반복하면서, 어느 순간부터 자신의 생각을 자신 있게 전달하게 됐다는 이야기를 많이 듣습니다. 단순한 화술 훈련이 아니라, 사람을 대하는 태도 자체가 달라졌다는 평가가 많습니다.</p>
+  </div>
+</section>
+
 <section class="cta-strip">
   <div class="wrap">
     <h2>파주 지역, 지금 상담을 신청하세요</h2>
@@ -215,5 +228,23 @@
   <div class="wrap">데일카네기코리아는 바인그룹이 운영합니다. © 2026 데일카네기코리아. All rights reserved.</div>
 </footer>
 
+<script>
+(function(){
+  function parseMD(s, year){ var p = s.split("."); return new Date(year, parseInt(p[0],10)-1, parseInt(p[1],10)); }
+  var now = new Date();
+  var year = now.getFullYear();
+  document.querySelectorAll("td.status[data-start]").forEach(function(td){
+    var start = parseMD(td.getAttribute("data-start"), year);
+    var end = parseMD(td.getAttribute("data-end"), year);
+    var diffDays = Math.ceil((start - now) / 86400000);
+    var label, cls;
+    if (diffDays > 10) { label = "모집중"; cls = "upcoming"; }
+    else if (diffDays > 0) { label = "마감임박"; cls = "closing"; }
+    else if (now <= end) { label = "진행중"; cls = "ongoing"; }
+    else { label = "수료"; cls = "done"; }
+    td.innerHTML = "<span class=\"status-badge " + cls + "\">" + label + "</span>";
+  });
+})();
+</script>
 </body>
 </html>
