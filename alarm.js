@@ -15,7 +15,8 @@
   try { landing = JSON.parse(sessionStorage.getItem(KEY) || "null"); } catch (err) {}
   var q = new URLSearchParams(location.search);
   var kw = q.get("n_query") || q.get("n_keyword") || q.get("utm_term") || q.get("keyword") || "";
-  if (!landing || kw) {
+  var arrived = !landing || kw;
+  if (arrived) {
     landing = {
       kw: kw,
       ad: q.get("n_media") || q.get("n_ad") ? "네이버광고" : q.get("gclid") ? "구글광고" : q.get("utm_source") || "",
@@ -24,6 +25,28 @@
     };
     try { sessionStorage.setItem(KEY, JSON.stringify(landing)); } catch (err) {}
   }
+
+  function send(btn) {
+    var body = JSON.stringify({
+      btn: btn,
+      title: document.title,
+      path: here(),
+      ref: landing.ref,
+      kw: landing.kw,
+      ad: landing.ad,
+      landing: landing.page,
+    });
+    try {
+      var blob = new Blob([body], { type: "text/plain" });
+      if (navigator.sendBeacon && navigator.sendBeacon(ENDPOINT, blob)) return;
+    } catch (err) {}
+    try {
+      fetch(ENDPOINT, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
+    } catch (err) {}
+  }
+
+  // 새 손님이 들어오면 방문 알림 (같은 방문 중 페이지 이동은 제외)
+  if (arrived && !navigator.webdriver) send("visit");
 
   function kind(href) {
     if (/^tel:/i.test(href)) return "tel";
@@ -41,22 +64,6 @@
     var now = Date.now();
     if (now - last < 3000) return; // 연속 클릭은 한 번만
     last = now;
-
-    var body = JSON.stringify({
-      btn: btn,
-      title: document.title,
-      path: here(),
-      ref: landing.ref,
-      kw: landing.kw,
-      ad: landing.ad,
-      landing: landing.page,
-    });
-    try {
-      var blob = new Blob([body], { type: "text/plain" });
-      if (navigator.sendBeacon && navigator.sendBeacon(ENDPOINT, blob)) return;
-    } catch (err) {}
-    try {
-      fetch(ENDPOINT, { method: "POST", body: body, keepalive: true, mode: "no-cors" });
-    } catch (err) {}
+    send(btn);
   }, true);
 })();
